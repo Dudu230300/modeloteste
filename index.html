@@ -2,426 +2,579 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0F172A">
-  <meta name="description" content="Francimar Lima — Contabilidade e Gestão Empresarial na Freguesia, Jacarepaguá, Rio de Janeiro. Abertura de empresas, MEI, contabilidade consultiva, Imposto de Renda, eSocial e regularização fiscal. Atendimento presencial e digital.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF7F5">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="MR Bioestética — Dra. Mara Regina. Biomedicina Estética, harmonização facial e corporal, toxina botulínica e bioestimuladores de colágeno no Cachambi e Méier, Rio de Janeiro. Agende sua avaliação pelo WhatsApp.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Francimar Lima | Contabilidade & Gestão Empresarial">
-  <meta property="og:description" content="Contabilidade descomplicada e segurança fiscal para a sua empresa crescer. Atendimento na Freguesia e em todo o Rio de Janeiro.">
-  <title>Francimar Lima | Contabilidade & Gestão Empresarial — Freguesia, RJ</title>
-
+  <meta property="og:title" content="MR Bioestética | Dra. Mara Regina — Beleza natural com sofisticação">
+  <meta property="og:description" content="Harmonização facial e corporal, Botox e estética avançada no Cachambi e Méier, Zona Norte do Rio. Atendimento individualizado.">
+  <title>MR Bioestética | Dra. Mara Regina — Biomedicina Estética no Cachambi e Méier</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: '#0F172A', royal: '#1E3A8A', cobalt: '#2563EB', emerald: '#10B981', ice: '#F8FAFC'
-          },
-          fontFamily: {
-            display: ['Plus Jakarta Sans', 'sans-serif'],
-            body: ['Inter', 'sans-serif']
-          },
-          boxShadow: {
-            soft: '0 18px 60px rgba(15,23,42,.07)',
-            card: '0 14px 40px rgba(15,23,42,.075)'
-          }
-        }
-      }
-    };
-  </script>
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: light; }
-    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
-    body { font-family: 'Inter', sans-serif; background: #fff; color: #334155; -webkit-font-smoothing: antialiased; }
-    h1,h2,h3,h4,.font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
-    ::selection { color: #0f172a; background: #a7f3d0; }
-    .page-container { width: min(100% - 2.5rem, 1200px); margin-inline: auto; }
-    .grid-lines { background-image: linear-gradient(rgba(37,99,235,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.035) 1px,transparent 1px); background-size: 42px 42px; }
-    .hero-glow { background: radial-gradient(circle at 20% 30%,rgba(16,185,129,.10),transparent 30%), radial-gradient(circle at 78% 22%,rgba(37,99,235,.08),transparent 32%); }
-    .text-gradient { background: linear-gradient(105deg,#2563eb 8%,#059669 90%); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .card-lift { transition: transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
-    .card-lift:hover { transform: translateY(-5px); border-color: #a7f3d0; box-shadow: 0 20px 50px rgba(15,23,42,.10); }
-    .icon-tile { display: grid; place-items: center; width: 3.4rem; height: 3.4rem; flex-shrink: 0; border-radius: 1rem; background: #eff6ff; color: #1d4ed8; font-size: 1.25rem; }
-    .section-kicker { display:inline-flex; align-items:center; gap:.6rem; text-transform:uppercase; letter-spacing:.15em; font-size:.73rem; font-weight:800; color:#047857; }
-    .section-kicker::before { content:""; width:22px; height:2px; background: #10b981; border-radius: 4px; }
-    .focus-ring:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid #10b981; outline-offset:4px; }
-    .hero-image-wrap::before { content:""; position:absolute; inset:17px -18px -18px 20px; border:1px solid rgba(37,99,235,.13); border-radius:30px; z-index:-1; }
-    .faq details[open] summary .faq-plus { transform: rotate(45deg); background: #d1fae5; color: #047857; }
-    .faq-plus { transition: transform .2s ease,background .2s ease; }
-    .float-whatsapp { animation: soft-pulse 3.2s infinite; }
-    @keyframes soft-pulse { 0%,100%{box-shadow:0 12px 30px rgba(5,150,105,.30)} 50%{box-shadow:0 12px 38px rgba(5,150,105,.50)} }
-    @media (max-width: 767px) { html { scroll-padding-top:82px; } .page-container{ width:min(100% - 2rem,1200px); } }
-    @media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto;} *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;} }
+    :root {
+      --paper: #FAF7F5;
+      --white: #FFFFFF;
+      --latte: #F1EAE5;
+      --sand: #EDE3DB;
+      --blush: #E9D9CD;
+      --gold: #C5A059;
+      --gold-dark: #9F7A36;
+      --coffee: #2C221E;
+      --muted: #72655E;
+      --line: rgba(67, 46, 32, .12);
+      --shadow: 0 24px 80px rgba(63, 42, 28, .10);
+      --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --sans: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body { margin: 0; background: var(--paper); color: var(--coffee); font-family: var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    img { max-width: 100%; display: block; }
+    svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; flex-shrink: 0; }
+    ::selection { background: #e2cfac; color: var(--coffee); }
+    :focus-visible { outline: 3px solid var(--gold-dark); outline-offset: 4px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip-link { position: fixed; top: -100px; left: 16px; z-index: 200; background: var(--coffee); color: white; padding: 12px 20px; border-radius: 8px; }
+    .skip-link:focus { top: 12px; }
+    .container { width: min(100% - 48px, 1192px); margin-inline: auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 11px; color: var(--gold-dark); font-size: 11px; letter-spacing: .20em; line-height: 1.5; text-transform: uppercase; font-weight: 700; }
+    .eyebrow::before { content: ''; width: 25px; height: 1px; background: currentColor; }
+    .section-heading { font: 500 clamp(34px, 4.2vw, 56px)/1.18 var(--serif); letter-spacing: -.035em; margin: 18px 0 20px; }
+    .section-heading em, .hero h1 em { color: var(--gold-dark); font-weight: 400; }
+    .section-description { color: var(--muted); line-height: 1.85; max-width: 550px; font-size: 15px; }
+    .section-pad { padding: 112px 0; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 12px; min-height: 55px; padding: 15px 24px; border: 1px solid transparent; border-radius: 5px; font-size: 13px; font-weight: 700; letter-spacing: .01em; text-align: center; cursor: pointer; transition: transform .25s, box-shadow .25s, background .25s, border-color .25s; }
+    .btn:hover { transform: translateY(-3px); }
+    .btn svg { font-size: 18px; }
+    .btn-primary { background: var(--coffee); color: white; box-shadow: 0 10px 26px rgba(44,34,30,.13); }
+    .btn-primary:hover { background: #49362a; box-shadow: 0 16px 32px rgba(44,34,30,.18); }
+    .btn-outline { color: var(--coffee); border-color: rgba(44,34,30,.25); background: transparent; }
+    .btn-outline:hover { background: rgba(44,34,30,.045); }
+    .btn-gold { color: var(--coffee); background: #D5B677; box-shadow: 0 13px 30px rgba(24,17,13,.15); }
+    .btn-gold:hover { background: #e3c688; }
+    .icon-wrap { display: grid; place-items: center; width: 53px; height: 53px; color: var(--gold-dark); border: 1px solid rgba(197,160,89,.36); border-radius: 50%; background: rgba(250,247,245,.66); }
+    .icon-wrap svg { width: 23px; height: 23px; }
+
+    /* Header */
+    .topline { height: 6px; background: linear-gradient(90deg, #785a35, #d7be8b 48%, #b9965d); }
+    .site-header { position: sticky; top: 0; z-index: 80; background: rgba(250,247,245,.96); border-bottom: 1px solid rgba(75,49,35,.09); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .nav { min-height: 88px; display: flex; align-items: center; gap: 28px; }
+    .brand { flex-shrink: 0; display: inline-flex; gap: 13px; align-items: center; min-width: 0; }
+    .brand-seal { width: 52px; height: 52px; flex-shrink: 0; border: 1px solid var(--gold); display: grid; place-items: center; color: var(--coffee); font: italic 600 23px/.95 var(--serif); letter-spacing: -.08em; position: relative; }
+    .brand-seal::after { content: ''; position: absolute; inset: 4px; border: 1px solid rgba(197,160,89,.32); pointer-events: none; }
+    .brand-text { display: flex; flex-direction: column; gap: 3px; }
+    .brand-title { font: 600 19px/1.15 var(--serif); white-space: nowrap; letter-spacing: -.025em; }
+    .brand-subtitle { font-size: 9px; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; letter-spacing: .19em; white-space: nowrap; }
+    .nav-links { margin-left: auto; display: flex; align-items: center; gap: clamp(16px, 2.2vw, 32px); }
+    .nav-links a { color: #534740; font-size: 12px; font-weight: 700; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold-dark); }
+    .nav-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 9px; background: var(--coffee); color: #fff; border-radius: 3px; padding: 13px 18px; font-size: 11px; font-weight: 700; transition: background .2s; }
+    .nav-cta:hover { background: #49362a; }
+    .nav-cta svg { font-size: 16px; }
+    .menu-toggle { display: none; margin-left: auto; border: 1px solid var(--line); background: transparent; width: 44px; height: 44px; place-items: center; border-radius: 4px; color: var(--coffee); cursor: pointer; }
+    .menu-toggle svg { width: 23px; height: 23px; }
+
+    /* Hero */
+    .hero { isolation: isolate; position: relative; overflow: hidden; background: linear-gradient(120deg, #FAF7F5 25%, #F7EFEB 100%); }
+    .hero::before { content: ''; z-index: -1; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(213,183,154,.22), transparent 70%); top: -240px; left: -240px; }
+    .hero-inner { display: grid; grid-template-columns: minmax(0,1.12fr) minmax(0,.88fr); align-items: center; gap: clamp(24px, 6vw, 88px); min-height: 690px; padding: 62px 0 74px; }
+    .hero-copy { padding: 10px 0; }
+    .hero-kicker { display: inline-flex; gap: 10px; align-items: center; margin: 0 0 28px; padding: 9px 13px; border: 1px solid rgba(197,160,89,.30); background: rgba(255,255,255,.58); border-radius: 99px; color: var(--gold-dark); letter-spacing: .12em; text-transform: uppercase; font-size: 9px; font-weight: 700; }
+    .hero-kicker .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+    .hero h1 { max-width: 665px; font: 500 clamp(42px, 5.05vw, 71px)/1.13 var(--serif); letter-spacing: -.043em; margin: 0 0 26px; }
+    .hero-lead { color: #665952; font-size: clamp(15px,1.4vw,17px); max-width: 555px; line-height: 1.9; margin: 0 0 32px; }
+    .hero-actions { display: flex; align-items: center; gap: 13px; flex-wrap: wrap; }
+    .hero-meta { display: flex; align-items: center; gap: 11px; margin-top: 34px; font-size: 12px; color: #796d65; }
+    .hero-meta svg { color: var(--gold-dark); font-size: 19px; }
+    .hero-art { height: 575px; position: relative; padding: 0 22px 22px 0; }
+    .hero-frame { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 240px 240px 11px 11px; background: radial-gradient(ellipse at 55% 35%,#efdfd1,#d6bba8 80%); box-shadow: 0 30px 68px rgba(83,53,36,.13); }
+    .hero-frame::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to top, rgba(54,35,26,.16), transparent 40%); }
+    .hero-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; }
+    .hero-frame figcaption { position: absolute; bottom: 13px; right: 16px; z-index: 1; color: white; font-size: 9px; text-shadow: 0 1px 6px #333; letter-spacing: .05em; }
+    .hero-frame.image-fallback img { display: none; }
+    .hero-frame.image-fallback::before { content:'MR'; display:grid;place-items:center;width:100%;height:100%;font:italic 500 126px var(--serif);color:rgba(255,255,255,.48); }
+    .hero-art::before { content: ''; position: absolute; top: 20px; right: 0; bottom: 0; left: 22px; border: 1px solid rgba(163,124,68,.55); border-radius: 240px 240px 11px 11px; }
+    .hero-stamp { position: absolute; z-index: 3; left: -49px; bottom: 44px; width: 151px; height: 151px; border-radius: 50%; background: #fffdfa; box-shadow: 0 16px 40px rgba(56,36,23,.12); border: 8px solid rgba(245,238,230,.8); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    .hero-stamp .ornament { font: italic 500 35px/1 var(--serif); color: var(--gold-dark); margin-bottom: 7px; }
+    .hero-stamp span:last-child { color: var(--coffee); font-size: 10px; line-height: 1.4; letter-spacing: .075em; text-transform: uppercase; font-weight: 700; }
+    .hero-sideword { position: absolute; top: 50%; right: -34px; writing-mode: vertical-rl; transform: translateY(-50%); font-size: 9px; letter-spacing: .35em; text-transform: uppercase; color: #ac9176; }
+    .trust-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.7); }
+    .trust-grid { min-height: 104px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
+    .trust-item { display: flex; align-items: center; justify-content: center; gap: 13px; padding: 17px; text-align: left; }
+    .trust-item:not(:last-child) { border-right: 1px solid var(--line); }
+    .trust-item svg { font-size: 23px; color: var(--gold-dark); }
+    .trust-item strong { display: block; font: 500 15px var(--serif); }
+    .trust-item span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
+
+    /* Procedures */
+    .procedures { background: var(--white); }
+    .heading-row { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-bottom: 38px; }
+    .heading-row .section-heading { max-width: 680px; margin-bottom: 0; }
+    .heading-row .section-description { max-width: 345px; margin-bottom: 2px; }
+    .procedure-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; }
+    .procedure-card { min-height: 337px; position: relative; display: flex; flex-direction: column; padding: 30px 25px 24px; background: #FBF8F6; border: 1px solid #EAE0D8; border-radius: 7px; transition: transform .28s, box-shadow .28s, border-color .28s; }
+    .procedure-card:hover { transform: translateY(-7px); border-color: #D8C29E; box-shadow: 0 24px 55px rgba(82,57,37,.09); }
+    .procedure-number { position: absolute; top: 32px; right: 25px; color: #B8A79A; font-size: 11px; letter-spacing: .08em; }
+    .procedure-card h3 { font: 500 24px/1.27 var(--serif); letter-spacing: -.025em; margin: 28px 0 13px; }
+    .procedure-card p { margin: 0 0 24px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+    .text-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; width: fit-content; color: #8f6a33; font-size: 11px; font-weight: 700; transition: gap .2s; }
+    .text-link:hover { gap: 13px; }
+    .text-link svg { width: 15px; height: 15px; }
+    .procedure-note { margin: 28px 0 0; color: #85786f; font-size: 11px; line-height: 1.8; text-align: center; }
+
+    /* Philosophy */
+    .philosophy { overflow: hidden; background: #F2E9E2; position: relative; }
+    .philosophy::after { content: 'MR'; position: absolute; right: -40px; bottom: -160px; font: italic 500 400px/.9 var(--serif); color: rgba(174,133,83,.07); pointer-events: none; }
+    .philosophy-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 10%; align-items: center; position: relative; z-index: 1; }
+    .philosophy .section-heading { max-width: 450px; }
+    .philosophy-intro { max-width: 410px; margin-top: 25px; }
+    .philosophy-signature { margin-top: 35px; color: #9C7950; font: italic 500 25px var(--serif); }
+    .values { display: grid; gap: 0; }
+    .value { display: grid; grid-template-columns: 61px 1fr; gap: 20px; padding: 30px 0; border-bottom: 1px solid rgba(62,39,25,.14); }
+    .value:first-child { padding-top: 0; }
+    .value:last-child { border-bottom: 0; padding-bottom: 0; }
+    .value h3 { margin: 2px 0 9px; font: 500 22px var(--serif); }
+    .value p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; max-width: 420px; }
+
+    /* About */
+    .about { background: #FFFEFD; }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(50px,8vw,116px); align-items: center; }
+    .about-art { height: 560px; border-radius: 300px 300px 8px 8px; background: linear-gradient(160deg,#EADCCF 5%,#CAB09C 60%,#A9846B 100%); padding: 18px; position: relative; box-shadow: var(--shadow); }
+    .about-art::before { content: ''; position: absolute; inset: 15px; border: 1px solid rgba(255,255,255,.5); border-radius: 290px 290px 5px 5px; }
+    .about-art-inner { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: relative; padding: 35px; }
+    .about-monogram { font: italic 500 clamp(90px,12vw,174px)/1 var(--serif); color: rgba(255,255,255,.66); letter-spacing: -.15em; padding-right: .16em; }
+    .about-quote { max-width: 290px; margin-top: 32px; color: #fffaf6; font: italic 500 23px/1.4 var(--serif); text-shadow: 0 1px 7px rgba(100,62,35,.18); }
+    .about-art-foot { position: absolute; bottom: 42px; color: rgba(255,255,255,.9); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; }
+    .about-small-float { position: absolute; right: -24px; bottom: 47px; background: #fffdfa; border-radius: 5px; padding: 20px 22px; box-shadow: 0 14px 40px rgba(62,41,29,.13); font: italic 500 18px var(--serif); color: var(--gold-dark); }
+    .about .section-description { max-width: 520px; }
+    .about p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 2; }
+    .about-list { padding: 22px 0 29px; display: grid; gap: 12px; }
+    .about-list span { display: flex; align-items: center; gap: 12px; color: #57483e; font-size: 13px; font-weight: 600; }
+    .about-list svg { color: var(--gold-dark); width: 18px; height: 18px; }
+
+    /* Journey */
+    .journey { background: #F9F5F1; padding: 98px 0; border-block: 1px solid var(--line); }
+    .centered { text-align: center; }
+    .centered .eyebrow { justify-content: center; }
+    .centered .section-heading { max-width: 650px; margin-inline: auto; }
+    .journey-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 40px; margin-top: 48px; }
+    .journey-card { position: relative; padding: 26px 10px; text-align: center; }
+    .journey-card:not(:last-child)::after { content: '······'; color: var(--gold); font: 600 21px var(--serif); letter-spacing: .20em; position: absolute; right: -40px; top: 55px; }
+    .journey-no { width: 66px; height: 66px; display: grid; place-items: center; border: 1px solid rgba(183,140,81,.5); background: white; color: var(--gold-dark); border-radius: 50%; font: italic 500 24px var(--serif); margin: 0 auto 25px; }
+    .journey h3 { font: 500 22px var(--serif); margin: 0 0 10px; }
+    .journey p { max-width: 300px; color: var(--muted); font-size: 13px; line-height: 1.75; margin: 0 auto; }
+
+    /* Testimonials */
+    .testimonials { background: #fff; }
+    .testimonials .heading-row { margin-bottom: 33px; }
+    .demo-note { max-width: 360px; color: #8A6C45; font-size: 11px; line-height: 1.7; border-left: 2px solid var(--gold); padding-left: 13px; }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 19px; }
+    .testimonial { display: flex; flex-direction: column; min-height: 255px; padding: 30px; border: 1px solid #E9E0D8; border-radius: 5px; background: #FDFBF9; }
+    .quote-icon { font: 500 55px/.7 var(--serif); color: var(--gold); }
+    .testimonial blockquote { flex: 1; margin: 25px 0 26px; font: italic 500 19px/1.6 var(--serif); color: #4E3D32; }
+    .testimonial-footer { padding-top: 15px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .testimonial-footer strong { color: var(--coffee); font-size: 12px; }
+    .testimonial-footer span { color: #99836d; font-size: 10px; }
+
+    /* FAQ */
+    .faq { background: var(--paper); padding: 90px 0 100px; }
+    .faq-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 9%; }
+    .faq .section-heading { margin-bottom: 15px; }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-list details { border-bottom: 1px solid var(--line); }
+    .faq-list summary { padding: 20px 6px 20px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 15px; list-style: none; color: var(--coffee); font-weight: 700; font-size: 13px; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary svg { color: var(--gold-dark); transition: transform .2s; }
+    .faq-list details[open] summary svg { transform: rotate(45deg); }
+    .faq-list p { color: var(--muted); font-size: 13px; line-height: 1.85; margin: -5px 0 22px; max-width: 600px; }
+
+    /* Contact */
+    .contact { background: var(--coffee); color: white; overflow: hidden; position: relative; }
+    .contact::before { content: ''; width: 650px; height: 650px; position: absolute; top: -300px; right: -100px; border: 1px solid rgba(230,193,132,.17); border-radius: 50%; box-shadow: 0 0 0 100px rgba(255,255,255,.025),0 0 0 200px rgba(255,255,255,.012); }
+    .contact-grid { padding: 105px 0; display: grid; grid-template-columns: 1.05fr .95fr; gap: 8%; position: relative; z-index: 1; align-items: center; }
+    .contact .eyebrow { color: #D5B677; }
+    .contact .section-heading { color: #fff8f1; max-width: 590px; font-size: clamp(40px,4.3vw,58px); }
+    .contact .section-heading em { color: #E4C488; }
+    .contact-lead { max-width: 515px; color: #D8CAC0; line-height: 1.85; font-size: 14px; margin: 0 0 32px; }
+    .contact-info { display: grid; gap: 22px; padding: 36px; border: 1px solid rgba(232,203,162,.26); border-radius: 7px; background: rgba(255,255,255,.04); }
+    .info-row { display: grid; grid-template-columns: 33px 1fr; gap: 15px; align-items: start; }
+    .info-row > svg { color: #E0BE85; font-size: 24px; margin-top: 2px; }
+    .info-row strong { display: block; color: #fff8ef; font-size: 13px; margin-bottom: 6px; }
+    .info-row span, .info-row a { color: #CEBDB0; font-size: 13px; line-height: 1.7; }
+    .info-row a:hover { color: #fff; }
+    .contact-footnote { margin: 12px 0 0; color: #AFA093; font-size: 11px; }
+
+    /* Footer */
+    .footer { background: #211915; color: #C8B8AD; }
+    .footer-main { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 55px; padding: 57px 0; }
+    .footer .brand-title { color: #fff9f2; }
+    .footer .brand-seal { color: #f8ecdf; }
+    .footer .brand-subtitle { color: #D6B677; }
+    .footer-description { max-width: 330px; color: #AFA096; font-size: 12px; line-height: 1.85; margin: 21px 0 0; }
+    .footer h3 { color: #F3E6DA; font-size: 12px; margin: 4px 0 20px; letter-spacing: .1em; text-transform: uppercase; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a, .footer-links span { color: #BAAAA0; font-size: 12px; line-height: 1.5; }
+    .footer-links a:hover { color: #e0c18e; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; gap: 20px; padding: 23px 0; color: #96857A; font-size: 11px; line-height: 1.7; }
+    .footer-bottom p { margin: 0; }
+
+    /* Fixed WhatsApp */
+    .wa-float { position: fixed; right: 24px; bottom: 24px; z-index: 70; background: #25D366; color: #fff; width: 62px; height: 62px; display: grid; place-items: center; border-radius: 50%; box-shadow: 0 10px 25px rgba(16,119,57,.3); transition: transform .25s, box-shadow .25s; }
+    .wa-float:hover { transform: translateY(-4px) scale(1.05); box-shadow: 0 14px 30px rgba(16,119,57,.38); }
+    .wa-float svg { width: 31px; height: 31px; stroke: none; fill: currentColor; }
+    .wa-float::after { content: 'Agende sua avaliação'; position: absolute; white-space: nowrap; right: 72px; background: #fff; padding: 11px 14px; border-radius: 4px; color: var(--coffee); box-shadow: 0 8px 25px rgba(33,20,10,.12); font-size: 11px; font-weight: 700; opacity: 0; transform: translateX(8px); pointer-events: none; transition: opacity .2s, transform .2s; }
+    .wa-float:hover::after, .wa-float:focus-visible::after { opacity: 1; transform: translateX(0); }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 1080px) {
+      .nav-links { gap: 17px; }
+      .nav-cta { padding: 12px; }
+      .hero-inner { gap: 35px; }
+      .hero-stamp { left: -20px; }
+      .procedure-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .procedure-card { min-height: 290px; }
+    }
+    @media (max-width: 860px) {
+      .container { width: min(100% - 36px, 1192px); }
+      .section-pad { padding: 80px 0; }
+      .nav { min-height: 74px; }
+      .brand-seal { width: 46px; height: 46px; font-size: 20px; }
+      .brand-title { font-size: 18px; }
+      .nav-cta { margin-left: auto; }
+      .nav-links { display: none; position: absolute; top: calc(100% + 1px); left: 0; right: 0; background: var(--paper); padding: 18px 25px 24px; border-bottom: 1px solid var(--line); box-shadow: 0 18px 32px rgba(50,33,24,.1); }
+      .nav-links.open { display: grid; gap: 0; }
+      .nav-links a { font-size: 14px; padding: 15px 3px; border-bottom: 1px solid var(--line); }
+      .menu-toggle { display: grid; margin-left: 0; }
+      .hero-inner { min-height: unset; grid-template-columns: 1fr 1fr; padding: 65px 0; }
+      .hero h1 { font-size: clamp(38px,5vw,55px); }
+      .hero-art { height: 490px; }
+      .hero-stamp { width: 119px; height: 119px; left: -12px; bottom: 34px; }
+      .hero-stamp .ornament { font-size: 27px; }
+      .hero-stamp span:last-child { font-size: 8px; }
+      .heading-row { align-items: start; flex-direction: column; gap: 16px; }
+      .philosophy-grid, .about-grid { gap: 45px; }
+      .about-art { height: 470px; }
+      .about-small-float { right: -11px; }
+      .contact-grid { gap: 34px; }
+      .footer-main { gap: 25px; }
+    }
+    @media (max-width: 650px) {
+      html { scroll-padding-top: 78px; }
+      .container { width: min(100% - 36px, 540px); }
+      .topline { height: 4px; }
+      .nav { min-height: 70px; gap: 10px; }
+      .brand { gap: 9px; }
+      .brand-seal { width: 42px; height: 42px; font-size: 18px; }
+      .brand-title { font-size: 17px; }
+      .brand-subtitle { font-size: 7.5px; letter-spacing: .1em; }
+      .nav-cta { display: none; }
+      .menu-toggle { margin-left: auto; width: 41px; height: 41px; }
+      .hero-inner { display: flex; flex-direction: column; align-items: stretch; gap: 45px; padding: 55px 0 62px; }
+      .hero-copy { padding: 0; }
+      .hero-kicker { font-size: 8px; letter-spacing: .065em; margin-bottom: 22px; }
+      .hero h1 { font-size: clamp(40px,10.8vw,54px); line-height: 1.14; margin-bottom: 20px; }
+      .hero-lead { font-size: 14px; line-height: 1.84; margin-bottom: 24px; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+      .hero-meta { margin-top: 22px; font-size: 11px; }
+      .hero-art { width: min(100% - 25px, 430px); align-self: center; height: 440px; margin-left: 20px; }
+      .hero-stamp { left: -32px; bottom: 30px; }
+      .hero-sideword { display: none; }
+      .trust-grid { display: flex; flex-direction: column; align-items: stretch; min-height: unset; padding: 8px 0; }
+      .trust-item { justify-content: flex-start; padding: 16px 8px; }
+      .trust-item:not(:last-child) { border-right: 0; border-bottom: 1px solid var(--line); }
+      .trust-item strong { font-size: 15px; }
+      .section-pad { padding: 74px 0; }
+      .section-heading { font-size: clamp(34px, 9vw, 44px); }
+      .heading-row { margin-bottom: 30px; }
+      .procedure-grid { grid-template-columns: 1fr; gap: 14px; }
+      .procedure-card { min-height: 250px; padding: 25px; }
+      .procedure-card h3 { margin-top: 24px; }
+      .philosophy-grid, .about-grid, .faq-grid, .contact-grid { grid-template-columns: 1fr; }
+      .philosophy-grid { gap: 45px; }
+      .value { grid-template-columns: 55px 1fr; gap: 15px; padding: 24px 0; }
+      .value h3 { font-size: 20px; }
+      .about-grid { gap: 50px; }
+      .about-art { height: 425px; width: min(100% - 10px, 430px); }
+      .about-small-float { right: -18px; padding: 14px 17px; font-size: 15px; }
+      .about-quote { font-size: 21px; }
+      .journey { padding: 73px 0; }
+      .journey-grid { grid-template-columns: 1fr; gap: 8px; margin-top: 30px; }
+      .journey-card { padding: 22px 10px; }
+      .journey-card:not(:last-child)::after { content: '·\A·\A·'; white-space: pre; top: auto; right: 50%; bottom: -15px; transform: translateX(50%); font-size: 20px; line-height: .45; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .testimonial { min-height: 215px; }
+      .testimonial blockquote { font-size: 18px; }
+      .faq { padding: 70px 0; }
+      .faq-grid { gap: 22px; }
+      .contact-grid { padding: 77px 0; gap: 42px; }
+      .contact-info { padding: 26px 20px; }
+      .contact .btn { width: 100%; }
+      .footer-main { grid-template-columns: 1fr 1fr; gap: 35px 15px; padding: 49px 0; }
+      .footer-main > div:first-child { grid-column: 1/-1; }
+      .footer-bottom { flex-direction: column; gap: 9px; }
+      .wa-float { right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); height: 56px; width: 56px; }
+      .wa-float::after { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
   </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AccountingService",
-    "name": "Francimar Lima — Contabilidade e Gestão Empresarial",
-    "description": "Serviços de contabilidade e gestão empresarial, abertura de empresas, MEI, Imposto de Renda, departamento pessoal, eSocial e regularização fiscal.",
-    "telephone": "+55 21 98856-2573",
-    "areaServed": [
-      {"@type":"Place","name":"Freguesia, Jacarepaguá, Rio de Janeiro, RJ"},
-      {"@type":"City","name":"Rio de Janeiro"}
-    ],
-    "address": {"@type":"PostalAddress","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR","addressDistrict":"Freguesia, Jacarepaguá"},
-    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],
-    "contactPoint": {"@type":"ContactPoint","telephone":"+55 21 98856-2573","contactType":"customer service","availableLanguage":"Portuguese"}
+    "@type": "LocalBusiness",
+    "name": "MR Bioestética — Dra. Mara Regina",
+    "description": "Biomedicina Estética e harmonização facial e corporal na região do Cachambi e Méier, Rio de Janeiro.",
+    "telephone": "+55 21 96828-3870",
+    "address": { "@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR" },
+    "areaServed": ["Cachambi", "Méier", "Zona Norte do Rio de Janeiro"],
+    "sameAs": ["https://www.instagram.com/mrbioestetica/"]
   }
   </script>
 </head>
-<body class="overflow-x-hidden">
-  <a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-4 focus:top-4 focus:rounded-xl focus:bg-white focus:px-4 focus:py-3 focus:text-navy focus:shadow-card">Pular para o conteúdo</a>
+<body>
+  <!-- Ícones SVG locais: o layout não depende de uma biblioteca externa de ícones. -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.52 3.48A11.87 11.87 0 0 0 12.08 0C5.5 0 .15 5.34.14 11.92a11.8 11.8 0 0 0 1.58 5.91L0 24l6.32-1.66a11.92 11.92 0 0 0 5.7 1.45h.01c6.58 0 11.93-5.35 11.94-11.93a11.86 11.86 0 0 0-3.45-8.38ZM12.03 21.8a9.93 9.93 0 0 1-5.05-1.39l-.36-.21-3.75.98 1-3.66-.24-.38a9.92 9.92 0 0 1-1.53-5.22C2.11 6.46 6.56 2 12.05 2a9.87 9.87 0 0 1 7.03 2.92A9.89 9.89 0 0 1 22 11.96c0 5.47-4.46 9.92-9.97 9.84Zm5.45-7.37c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.08-.3-.15-1.26-.47-2.39-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.66-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.22 3.08c.15.2 2.11 3.22 5.11 4.51.72.31 1.29.5 1.73.64.73.23 1.39.2 1.92.12.58-.09 1.77-.72 2.02-1.41.25-.7.25-1.29.17-1.42-.08-.12-.27-.2-.57-.35Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2Zm7 14 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.6 0L12 6.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.8a5.4 5.4 0 0 0 0-7.6Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-stars" viewBox="0 0 24 24"><path d="m12 2 2.1 7.9L22 12l-7.9 2.1L12 22l-2.1-7.9L2 12l7.9-2.1L12 2Z"/></symbol>
+    <symbol id="i-face" viewBox="0 0 24 24"><path d="M4.5 10c0-5 2.8-8 7.5-8s7.5 3 7.5 8v3c0 4.8-3 9-7.5 9s-7.5-4.2-7.5-9v-3Z"/><path d="M8 11h1m6 0h1m-7 5c2 1.5 4 1.5 6 0"/></symbol>
+    <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 2S4 11 4 15a8 8 0 0 0 16 0c0-4-8-13-8-13Z"/><path d="M8 16a4 4 0 0 0 4 4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Zm-9 10 9 5 9-5M3 17l9 5 9-5"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M18 6.5h.01"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.7 19.7 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.7 19.7 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3.1a2 2 0 0 1-.57 1.74L7.1 10.5a16 16 0 0 0 6.4 6.4l1.96-1.94a2 2 0 0 1 1.74-.57l3.1.5a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </svg>
 
-  <!-- CABEÇALHO -->
-  <div class="hidden border-b border-slate-100 bg-ice lg:block">
-    <div class="page-container flex h-10 items-center justify-between text-[12px] font-medium text-slate-500">
-      <p><i class="fa-solid fa-location-dot mr-2 text-emerald" aria-hidden="true"></i>Freguesia, Jacarepaguá · Rio de Janeiro, RJ</p>
-      <p><i class="fa-regular fa-clock mr-2 text-emerald" aria-hidden="true"></i>Segunda a sexta, das 9h às 18h <span class="mx-4 text-slate-300">|</span> Atendimento presencial e digital</p>
-    </div>
-  </div>
-  <header class="sticky top-0 z-50 border-b border-slate-100/90 bg-white/95 shadow-[0_3px_24px_rgba(15,23,42,.03)] backdrop-blur-xl">
-    <div class="page-container flex h-[78px] items-center justify-between gap-5">
-      <a href="#inicio" aria-label="Francimar Lima — voltar ao início" class="flex min-w-0 items-center gap-3 no-underline">
-        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-navy font-display text-lg font-extrabold tracking-[-.11em] text-white shadow-lg shadow-blue-950/15" aria-hidden="true">FL<span class="ml-0.5 text-emerald">.</span></span>
-        <span class="block min-w-0 leading-tight">
-          <strong class="block font-display text-[16px] font-extrabold tracking-tight text-navy sm:text-[18px]">Francimar Lima</strong>
-          <small class="mt-1 block text-[9px] font-semibold uppercase tracking-[.11em] text-slate-500 sm:text-[10px]">Contabilidade &amp; Gestão Empresarial</small>
-        </span>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+  <div class="topline" aria-hidden="true"></div>
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="MR Bioestética — voltar ao início">
+        <span class="brand-seal" aria-hidden="true">MR</span>
+        <span class="brand-text"><span class="brand-title">MR Bioestética</span><span class="brand-subtitle">Dra. Mara Regina</span></span>
       </a>
-      <nav aria-label="Navegação principal" class="hidden items-center gap-7 xl:gap-9 lg:flex">
-        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#servicos">Serviços</a>
-        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#publico">Para Quem Atendemos</a>
-        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#diferenciais">Diferenciais</a>
-        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#contato">Contato</a>
-      </nav>
-      <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20contador%20da%20Francimar%20Lima." target="_blank" rel="noopener noreferrer" class="focus-ring hidden items-center justify-center gap-2.5 rounded-xl bg-navy px-5 py-3.5 text-[13px] font-bold text-white shadow-lg shadow-blue-950/10 transition hover:-translate-y-0.5 hover:bg-royal md:inline-flex">
-        <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i> Falar com Contador
-      </a>
-      <button id="menu-button" type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Abrir menu de navegação" class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-navy transition hover:bg-slate-50 lg:hidden">
-        <i id="menu-icon" class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
-      </button>
-    </div>
-    <nav id="mobile-navigation" aria-label="Navegação para dispositivos móveis" class="hidden border-t border-slate-100 bg-white px-4 pb-6 pt-3 shadow-xl lg:hidden">
-      <div class="mx-auto flex max-w-lg flex-col gap-1">
-        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#servicos">Serviços</a>
-        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#publico">Para Quem Atendemos</a>
-        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#diferenciais">Diferenciais</a>
-        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#contato">Contato</a>
-        <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20contador%20da%20Francimar%20Lima." target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex items-center justify-center gap-3 rounded-xl bg-navy px-5 py-3.5 font-bold text-white">
-          <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Falar com Contador
-        </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#sobre">Sobre a especialista</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
       </div>
+      <a class="nav-cta" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Gostaria de agendar uma avaliação na MR Bioestética."><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar avaliação</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu"><svg aria-hidden="true"><use id="menu-icon" href="#i-menu"/></svg></button>
     </nav>
   </header>
 
   <main id="conteudo">
-    <!-- HERO -->
-    <section id="inicio" aria-labelledby="hero-title" class="hero-glow grid-lines relative isolate overflow-hidden bg-white pt-14 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32">
-      <div class="page-container grid items-center gap-14 lg:grid-cols-[1.06fr_.94fr] lg:gap-16">
-        <div class="relative z-10 max-w-[670px]">
-          <div class="mb-7 inline-flex max-w-full items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/90 px-3.5 py-2 text-[11px] font-bold leading-5 text-emerald-800 sm:text-[12px]">
-            <span class="flex h-2 w-2 shrink-0 rounded-full bg-emerald" aria-hidden="true"></span>
-            Atendimento especializado na Freguesia e todo o Rio de Janeiro
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="dot" aria-hidden="true"></span> Biomedicina Estética · Cachambi &amp; Méier</p>
+          <h1 id="hero-title">Realce sua beleza <em>natural</em> com segurança, técnica e resultados elegantes.</h1>
+          <p class="hero-lead">Protocolos personalizados de Harmonização Facial, Botox e Estética Avançada no Cachambi e Méier. Um cuidado que respeita seus traços, sua essência e sua individualidade.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Vim pelo site da MR Bioestética e gostaria de agendar minha avaliação."><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar Avaliação pelo WhatsApp</a>
+            <a class="btn btn-outline" href="#procedimentos">Conhecer procedimentos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
-          <h1 id="hero-title" class="font-display text-[clamp(2.5rem,5.05vw,4.25rem)] font-extrabold leading-[1.13] tracking-[-.048em] text-navy">
-            Contabilidade descomplicada e <span class="text-gradient">segurança fiscal</span> para a sua empresa crescer.
-          </h1>
-          <p class="mt-7 max-w-[580px] text-[16px] leading-[1.9] text-slate-600 sm:text-[17px]">
-            Abertura de empresas, gestão de MEI, planejamento tributário, Imposto de Renda e eSocial com atendimento próximo e transparente.
-          </p>
-          <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20servi%C3%A7os%20cont%C3%A1beis." target="_blank" rel="noopener noreferrer" class="focus-ring inline-flex min-h-[56px] items-center justify-center gap-3 rounded-2xl bg-emerald-600 px-6 py-4 text-center text-[14px] font-bold text-white shadow-[0_14px_28px_rgba(5,150,105,.20)] transition hover:-translate-y-0.5 hover:bg-emerald-700">
-              <i class="fa-brands fa-whatsapp text-[22px]" aria-hidden="true"></i> Solicitar Orçamento no WhatsApp <i class="fa-solid fa-arrow-up-right-from-square text-[11px] opacity-75" aria-hidden="true"></i>
-            </a>
-            <a href="#servicos" class="focus-ring inline-flex min-h-[56px] items-center justify-center gap-2.5 rounded-2xl border border-slate-200 bg-white px-6 py-4 text-[14px] font-bold text-navy shadow-sm transition hover:border-blue-200 hover:bg-ice">
-              Conhecer Serviços <i class="fa-solid fa-arrow-down text-xs text-cobalt" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="mt-9 flex flex-wrap items-center gap-x-7 gap-y-3 text-[12px] font-semibold text-slate-600">
-            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald" aria-hidden="true"></i> Atendimento humanizado</span>
-            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald" aria-hidden="true"></i> Presencial e digital</span>
-            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald" aria-hidden="true"></i> Suporte para sua empresa</span>
-          </div>
+          <div class="hero-meta"><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Atendimento na Zona Norte do Rio de Janeiro</span></div>
         </div>
-        <div class="relative mx-auto w-full max-w-[545px] lg:ml-auto">
-          <div class="pointer-events-none absolute -left-6 -top-8 z-0 h-40 w-40 rounded-full bg-emerald-100/80 blur-3xl" aria-hidden="true"></div>
-          <div class="pointer-events-none absolute -bottom-7 -right-7 z-0 h-44 w-44 rounded-full bg-blue-100/90 blur-3xl" aria-hidden="true"></div>
-          <div class="hero-image-wrap relative z-10 overflow-visible rounded-[30px]">
-            <div class="relative h-[390px] overflow-hidden rounded-[28px] bg-slate-200 shadow-[0_30px_75px_rgba(15,23,42,.18)] sm:h-[500px]">
-              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Equipe profissional reunida em um escritório moderno para discutir planejamento empresarial" class="h-full w-full object-cover object-center" fetchpriority="high" decoding="async">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-slate-900/10 to-transparent" aria-hidden="true"></div>
-              <div class="absolute bottom-7 left-7 right-7 text-white sm:bottom-9 sm:left-9">
-                <span class="mb-2 block text-[11px] font-bold uppercase tracking-[.19em] text-emerald-300">Contabilidade consultiva</span>
-                <p class="max-w-[280px] font-display text-2xl font-extrabold leading-tight sm:text-[28px]">Mais clareza para suas decisões.</p>
-              </div>
-            </div>
-            <div class="absolute -bottom-7 -left-3 z-20 flex max-w-[260px] items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3.5 shadow-[0_20px_48px_rgba(15,23,42,.15)] sm:-left-8 sm:px-5 sm:py-4">
-              <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-50 text-xl text-emerald-600"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
-              <span><strong class="block font-display text-[13px] font-extrabold text-navy">Tranquilidade fiscal</strong><small class="mt-1 block text-[11px] leading-4 text-slate-500">Organização e apoio em cada etapa</small></span>
-            </div>
-            <div class="absolute -right-2 top-7 z-20 hidden items-center gap-2 rounded-full border border-white/70 bg-white/95 px-4 py-3 shadow-card sm:flex sm:-right-5">
-              <i class="fa-solid fa-arrow-trend-up text-emerald-600" aria-hidden="true"></i><span class="text-[12px] font-bold text-navy">Gestão para crescer</span>
-            </div>
-          </div>
+        <div class="hero-art" aria-label="Imagem ilustrativa de atendimento estético">
+          <figure class="hero-frame" style="margin:0">
+            <img src="https://images.pexels.com/photos/5659009/pexels-photo-5659009.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Procedimento de cuidado facial em ambiente de estética, imagem ilustrativa" width="800" height="1150" fetchpriority="high" decoding="async" onerror="this.closest('.hero-frame').classList.add('image-fallback')">
+            <figcaption>Imagem ilustrativa</figcaption>
+          </figure>
+          <div class="hero-stamp" aria-hidden="true"><span class="ornament">MR</span><span>Beleza com<br>essência</span></div>
+          <span class="hero-sideword" aria-hidden="true">SOFISTICAÇÃO · NATURALIDADE · CUIDADO</span>
         </div>
       </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" aria-labelledby="servicos-title" class="bg-ice py-20 sm:py-28">
-      <div class="page-container">
-        <div class="mx-auto max-w-[740px] text-center">
-          <span class="section-kicker">Nossas soluções</span>
-          <h2 id="servicos-title" class="mt-4 font-display text-[32px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[42px]">Soluções contábeis para cada fase do seu negócio</h2>
-          <p class="mx-auto mt-5 max-w-2xl text-[15px] leading-8 text-slate-600 sm:text-[16px]">Do primeiro CNPJ à rotina de uma empresa em expansão, ajudamos você a manter tudo organizado e tomar decisões com confiança.</p>
+    <div class="trust-band" aria-label="Princípios de atendimento">
+      <div class="container trust-grid">
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-heart"/></svg><div><strong>Cuidado individualizado</strong><span>Você é única em cada detalhe.</span></div></div>
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-shield"/></svg><div><strong>Segurança em primeiro lugar</strong><span>Avaliação e orientação profissional.</span></div></div>
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-sparkle"/></svg><div><strong>Beleza com naturalidade</strong><span>Respeito à sua identidade.</span></div></div>
+      </div>
+    </div>
+
+    <section class="procedures section-pad" id="procedimentos" aria-labelledby="procedimentos-title">
+      <div class="container">
+        <div class="heading-row reveal">
+          <div><span class="eyebrow">Nossas especialidades</span><h2 class="section-heading" id="procedimentos-title">Sua melhor versão começa com um <em>cuidado especial.</em></h2></div>
+          <p class="section-description">Conheça procedimentos estéticos que podem fazer parte de um plano de cuidado definido especialmente para você, após avaliação individual.</p>
         </div>
-        <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
-            <span class="icon-tile"><i class="fa-solid fa-building-circle-check" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Abertura e Legalização de Empresas</h3>
-            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Processo ágil e sem burocracia para tirar seu CNPJ do papel, com orientação na escolha do regime tributário adequado.</p>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20abertura%20e%20legaliza%C3%A7%C3%A3o%20de%20empresas." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+        <div class="procedure-grid">
+          <article class="procedure-card reveal">
+            <div class="icon-wrap"><svg aria-hidden="true"><use href="#i-face"/></svg></div><span class="procedure-number">01 / 04</span>
+            <h3>Toxina Botulínica <br>(Botox)</h3><p>Suavização de linhas de expressão com foco na preservação da naturalidade e da harmonia facial.</p>
+            <a class="text-link" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Gostaria de saber mais sobre Toxina Botulínica (Botox) e agendar uma avaliação.">Saber mais no WhatsApp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
-          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
-            <span class="icon-tile"><i class="fa-solid fa-id-card-clip" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Gestão Completa para MEI</h3>
-            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Abertura, alterações, declaração anual DASN-SIMEI, emissão de notas fiscais e apoio na migração de MEI para ME.</p>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20gest%C3%A3o%20de%20MEI%20e%20migra%C3%A7%C3%A3o%20para%20ME." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          <article class="procedure-card reveal">
+            <div class="icon-wrap"><svg aria-hidden="true"><use href="#i-sparkle"/></svg></div><span class="procedure-number">02 / 04</span>
+            <h3>Harmonização Facial</h3><p>Preenchimento labial, rinomodelação e contorno facial com atenção ao equilíbrio dos traços.</p>
+            <a class="text-link" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Quero informações sobre Harmonização Facial (preenchimento labial, rinomodelação ou contorno facial).">Saber mais no WhatsApp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
-          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
-            <span class="icon-tile"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Contabilidade para Pequenas e Médias Empresas</h3>
-            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Escrituração contábil, apuração de impostos e acompanhamento das obrigações no Simples Nacional e Lucro Presumido.</p>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20contabilidade%20para%20pequenas%20e%20m%C3%A9dias%20empresas." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          <article class="procedure-card reveal">
+            <div class="icon-wrap"><svg aria-hidden="true"><use href="#i-droplet"/></svg></div><span class="procedure-number">03 / 04</span>
+            <h3>Bioestimuladores de Colágeno</h3><p>Protocolos voltados à firmeza, ao rejuvenescimento e à melhora da qualidade da pele.</p>
+            <a class="text-link" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Gostaria de saber mais sobre os Bioestimuladores de Colágeno e a avaliação inicial.">Saber mais no WhatsApp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
-          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
-            <span class="icon-tile"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Imposto de Renda Pessoa Física e Jurídica</h3>
-            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Declarações, apuração de ganho de capital e orientação para tratar pendências e situações de malha fina com segurança.</p>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Imposto%20de%20Renda%20pessoa%20f%C3%ADsica%20ou%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          <article class="procedure-card reveal">
+            <div class="icon-wrap"><svg aria-hidden="true"><use href="#i-layers"/></svg></div><span class="procedure-number">04 / 04</span>
+            <h3>Harmonização Glútea e Corporal</h3><p>Cuidados voltados a contorno, volume, celulite e flacidez, conforme indicação profissional.</p>
+            <a class="text-link" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Gostaria de conhecer os tratamentos de Harmonização Glútea e Corporal.">Saber mais no WhatsApp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
-          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
-            <span class="icon-tile"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Departamento Pessoal e eSocial</h3>
-            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Folha de pagamento, admissões, rescisões, férias, obrigações trabalhistas e gestão de eSocial Doméstico.</p>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20departamento%20pessoal%20e%20eSocial." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
-          </article>
-          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
-            <span class="icon-tile"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Regularização Fiscal e Certidões</h3>
-            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Orientação para parcelar débitos, emitir certidões e regularizar pendências perante a Receita Federal e outros órgãos.</p>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20regulariza%C3%A7%C3%A3o%20fiscal%20e%20certid%C3%B5es." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
-          </article>
+        </div>
+        <p class="procedure-note">A indicação dos procedimentos depende de avaliação individual, histórico de saúde e análise de possíveis contraindicações. Resultados e tempo de resposta podem variar.</p>
+      </div>
+    </section>
+
+    <section class="philosophy section-pad" id="diferenciais" aria-labelledby="diferenciais-title">
+      <div class="container philosophy-grid">
+        <div class="reveal"><span class="eyebrow">Por que escolher a MR Bioestética</span><h2 class="section-heading" id="diferenciais-title">A verdadeira elegância está em <em>ser você.</em></h2><p class="section-description philosophy-intro">Acreditamos em uma estética que valoriza sua identidade. Mais do que procedimentos, oferecemos escuta, planejamento cuidadoso e atenção a cada etapa.</p><div class="philosophy-signature">Beleza que respeita a sua essência.</div></div>
+        <div class="values">
+          <div class="value reveal"><div class="icon-wrap"><svg aria-hidden="true"><use href="#i-heart"/></svg></div><div><h3>Protocolos 100% individualizados</h3><p>Um olhar atento às suas necessidades, objetivos, características e expectativas antes de qualquer indicação.</p></div></div>
+          <div class="value reveal"><div class="icon-wrap"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><div><h3>Compromisso com segurança</h3><p>Compromisso com o uso de produtos originais e regularizados perante a Anvisa, conforme as indicações aplicáveis.</p></div></div>
+          <div class="value reveal"><div class="icon-wrap"><svg aria-hidden="true"><use href="#i-stars"/></svg></div><div><h3>Atendimento humanizado</h3><p>Conversa próxima, acolhimento e foco em resultados naturais, respeitando limites e possibilidades individuais.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- PARA QUEM ATENDEMOS -->
-    <section id="publico" aria-labelledby="publico-title" class="bg-white py-20 sm:py-24">
-      <div class="page-container grid items-start gap-9 lg:grid-cols-[.85fr_1.15fr] lg:gap-16">
-        <div class="lg:sticky lg:top-32">
-          <span class="section-kicker">Para quem atendemos</span>
-          <h2 id="publico-title" class="mt-4 max-w-lg font-display text-[32px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[40px]">Seu negócio é único. A contabilidade também deve ser.</h2>
-          <p class="mt-5 max-w-lg text-[15px] leading-8 text-slate-600">Acompanhamento contábil pensado para a realidade de quem empreende, presta serviços e precisa de mais tempo para cuidar do próprio negócio.</p>
-          <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20as%20necessidades%20cont%C3%A1beis%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-royal transition hover:text-emerald-700">Converse sobre sua empresa <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    <section class="about section-pad" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about-grid">
+        <div class="about-art reveal" aria-label="Painel decorativo com monograma MR Bioestética">
+          <div class="about-art-inner"><div class="about-monogram" aria-hidden="true">MR</div><div class="about-quote">“Sua beleza tem história. Nosso cuidado tem propósito.”</div><div class="about-art-foot">MR BIOESTÉTICA · MARA REGINA</div></div>
+          <div class="about-small-float" aria-hidden="true">Estética com essência</div>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-store" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">MEI e Microempresas</h3><p class="mt-2 text-sm leading-7 text-slate-600">Apoio para começar, organizar as obrigações e evoluir com segurança.</p></div>
-          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">Profissionais Liberais</h3><p class="mt-2 text-sm leading-7 text-slate-600">Orientação sobre tributos, formalização e organização financeira.</p></div>
-          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-shop" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">Comércio e Serviços</h3><p class="mt-2 text-sm leading-7 text-slate-600">Rotinas contábeis e fiscais alinhadas às necessidades da operação.</p></div>
-          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-building" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">Pequenas e Médias Empresas</h3><p class="mt-2 text-sm leading-7 text-slate-600">Suporte para manter a conformidade e enxergar oportunidades de melhoria.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DIFERENCIAIS -->
-    <section id="diferenciais" aria-labelledby="diferenciais-title" class="relative isolate overflow-hidden bg-navy py-20 text-white sm:py-28">
-      <div class="pointer-events-none absolute -right-48 -top-48 h-[500px] w-[500px] rounded-full bg-cobalt/15 blur-[95px]" aria-hidden="true"></div>
-      <div class="pointer-events-none absolute -bottom-48 -left-36 h-[450px] w-[450px] rounded-full bg-emerald/10 blur-[95px]" aria-hidden="true"></div>
-      <div class="page-container relative z-10">
-        <div class="grid gap-8 lg:grid-cols-[.95fr_1.05fr] lg:items-end lg:gap-14">
-          <div>
-            <span class="inline-flex items-center gap-2 text-[12px] font-extrabold uppercase tracking-[.15em] text-emerald-300"><span class="h-[2px] w-6 bg-emerald-400"></span> Por que nos escolher</span>
-            <h2 id="diferenciais-title" class="mt-5 max-w-xl font-display text-[32px] font-extrabold leading-[1.23] tracking-[-.04em] sm:text-[42px]">Mais do que números. <span class="text-emerald-300">Uma parceria de confiança.</span></h2>
-          </div>
-          <p class="max-w-xl text-[15px] leading-8 text-slate-300 sm:text-[16px]">Aqui, a contabilidade não precisa ser distante ou complicada. Você conta com orientação clara, contato próximo e atenção às necessidades reais do seu negócio — na Freguesia, em Jacarepaguá e além.</p>
-        </div>
-        <div class="mt-12 grid gap-5 md:grid-cols-3">
-          <article class="rounded-[24px] border border-white/10 bg-white/[.065] p-7 backdrop-blur-sm sm:p-8">
-            <span class="grid h-13 w-13 h-[54px] place-items-center rounded-2xl bg-emerald/15 text-[23px] text-emerald-300"><i class="fa-regular fa-comments" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-lg font-bold text-white">Atendimento humanizado</h3>
-            <p class="mt-3 text-[14px] leading-7 text-slate-300">Conversa direta com o contador, sem robôs e com explicações que fazem sentido para você.</p>
-          </article>
-          <article class="rounded-[24px] border border-white/10 bg-white/[.065] p-7 backdrop-blur-sm sm:p-8">
-            <span class="grid h-[54px] w-[54px] place-items-center rounded-2xl bg-emerald/15 text-[23px] text-emerald-300"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-lg font-bold text-white">Agilidade e organização</h3>
-            <p class="mt-3 text-[14px] leading-7 text-slate-300">Acompanhamento da rotina fiscal, atenção aos prazos e entrega organizada de guias.</p>
-          </article>
-          <article class="rounded-[24px] border border-white/10 bg-white/[.065] p-7 backdrop-blur-sm sm:p-8">
-            <span class="grid h-[54px] w-[54px] place-items-center rounded-2xl bg-emerald/15 text-[23px] text-emerald-300"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></span>
-            <h3 class="mt-6 font-display text-lg font-bold text-white">Suporte próximo e digital</h3>
-            <p class="mt-3 text-[14px] leading-7 text-slate-300">Presença na região da Freguesia com a praticidade de um atendimento 100% digital.</p>
-          </article>
+        <div class="reveal">
+          <span class="eyebrow">Conheça a especialista</span>
+          <h2 class="section-heading" id="sobre-title">Sobre a <em>Dra. Mara Regina</em></h2>
+          <p>À frente da <strong>MR Bioestética</strong>, a Dra. Mara Regina atua como <strong>Biomédica Esteta</strong>, dedicando seu trabalho à valorização da beleza individual por meio da Biomedicina Estética e de protocolos planejados com atenção.</p>
+          <p>Com atendimento direcionado a pacientes do <strong>Cachambi, Méier e região da Zona Norte do Rio de Janeiro</strong>, sua proposta é unir técnica, acolhimento e uma experiência próxima, para que cada pessoa se sinta ouvida e segura em suas decisões.</p>
+          <div class="about-list"><span><svg aria-hidden="true"><use href="#i-check"/></svg> Escuta e avaliação personalizada</span><span><svg aria-hidden="true"><use href="#i-check"/></svg> Atenção à harmonia e à naturalidade</span><span><svg aria-hidden="true"><use href="#i-check"/></svg> Orientação e acompanhamento individual</span></div>
+          <a class="btn btn-primary" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Conheci sua apresentação no site e gostaria de conversar sobre uma avaliação."><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Conversar com a Dra. Mara</a>
         </div>
       </div>
     </section>
 
-    <!-- PROCESSO -->
-    <section id="como-funciona" aria-labelledby="passos-title" class="bg-white py-20 sm:py-28">
-      <div class="page-container">
-        <div class="mx-auto max-w-[700px] text-center">
-          <span class="section-kicker">Simples assim</span>
-          <h2 id="passos-title" class="mt-4 font-display text-[32px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[42px]">Abrir sua empresa ou trocar de contador é mais fácil do que parece.</h2>
-          <p class="mt-5 text-[15px] leading-8 text-slate-600">Em três passos, você entende o caminho e recebe orientação do início ao fim.</p>
-        </div>
-        <ol class="relative mt-14 grid gap-8 md:grid-cols-3 md:gap-10">
-          <li class="relative text-center">
-            <div class="mx-auto grid h-[76px] w-[76px] place-items-center rounded-[23px] bg-blue-50 text-2xl text-cobalt"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
-            <span class="mx-auto mt-5 grid h-8 w-8 place-items-center rounded-full bg-navy font-display text-xs font-bold text-white">01</span>
-            <h3 class="mt-5 font-display text-lg font-extrabold text-navy">Contato pelo WhatsApp</h3>
-            <p class="mx-auto mt-3 max-w-[295px] text-[14px] leading-7 text-slate-600">Conte o que precisa e tire suas primeiras dúvidas de forma prática.</p>
-          </li>
-          <li class="relative text-center">
-            <div class="mx-auto grid h-[76px] w-[76px] place-items-center rounded-[23px] bg-blue-50 text-2xl text-cobalt"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
-            <span class="mx-auto mt-5 grid h-8 w-8 place-items-center rounded-full bg-navy font-display text-xs font-bold text-white">02</span>
-            <h3 class="mt-5 font-display text-lg font-extrabold text-navy">Análise inicial gratuita</h3>
-            <p class="mx-auto mt-3 max-w-[295px] text-[14px] leading-7 text-slate-600">Entendemos seu cenário e apresentamos os próximos passos e a proposta de atendimento.</p>
-          </li>
-          <li class="relative text-center">
-            <div class="mx-auto grid h-[76px] w-[76px] place-items-center rounded-[23px] bg-blue-50 text-2xl text-cobalt"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
-            <span class="mx-auto mt-5 grid h-8 w-8 place-items-center rounded-full bg-navy font-display text-xs font-bold text-white">03</span>
-            <h3 class="mt-5 font-display text-lg font-extrabold text-navy">Tudo encaminhado com clareza</h3>
-            <p class="mx-auto mt-3 max-w-[295px] text-[14px] leading-7 text-slate-600">Cuidamos dos trâmites contratados e acompanhamos a regularização do seu negócio.</p>
-          </li>
-        </ol>
-        <div class="mt-12 text-center">
-          <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20abrir%20minha%20empresa%20ou%20trocar%20de%20contador.%20Como%20podemos%20come%C3%A7ar%3F" target="_blank" rel="noopener noreferrer" class="focus-ring inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-navy px-7 py-4 text-[14px] font-bold text-white transition hover:bg-royal"><i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i> Começar agora</a>
+    <section class="journey" aria-labelledby="jornada-title">
+      <div class="container"><div class="centered reveal"><span class="eyebrow">O primeiro passo</span><h2 class="section-heading" id="jornada-title">Seu momento de cuidado em <em>3 passos.</em></h2></div>
+        <div class="journey-grid">
+          <div class="journey-card reveal"><div class="journey-no">01</div><h3>Entre em contato</h3><p>Envie uma mensagem pelo WhatsApp e conte o que você gostaria de melhorar ou valorizar.</p></div>
+          <div class="journey-card reveal"><div class="journey-no">02</div><h3>Faça sua avaliação</h3><p>Converse sobre seus objetivos, histórico e possibilidades de tratamento com orientação individualizada.</p></div>
+          <div class="journey-card reveal"><div class="journey-no">03</div><h3>Receba seu plano</h3><p>Conheça as opções indicadas para o seu caso, com expectativas realistas e acompanhamento.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato" aria-labelledby="contato-title" class="bg-ice py-20 sm:py-28">
-      <div class="page-container">
-        <div class="grid overflow-hidden rounded-[28px] bg-white shadow-[0_22px_80px_rgba(15,23,42,.08)] lg:grid-cols-[1.07fr_.93fr]">
-          <div class="p-7 sm:p-12 lg:p-14">
-            <span class="section-kicker">Vamos conversar?</span>
-            <h2 id="contato-title" class="mt-5 max-w-lg font-display text-[33px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[42px]">Sua empresa merece uma contabilidade que caminha ao seu lado.</h2>
-            <p class="mt-5 max-w-lg text-[15px] leading-8 text-slate-600">Precisa abrir um CNPJ, regularizar sua situação ou encontrar um suporte contábil mais próximo? Entre em contato para conversar sobre suas necessidades.</p>
-            <div class="mt-8 flex flex-col gap-6">
-              <div class="flex items-start gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><div><h3 class="text-[13px] font-extrabold text-navy">Localização e região de atendimento</h3><p class="mt-1 text-sm leading-7 text-slate-600">Freguesia, Jacarepaguá — Rio de Janeiro, RJ<br>Atendimento presencial e 100% digital</p></div></div>
-              <div class="flex items-start gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-blue-50 text-cobalt"><i class="fa-regular fa-clock" aria-hidden="true"></i></span><div><h3 class="text-[13px] font-extrabold text-navy">Horário de atendimento</h3><p class="mt-1 text-sm leading-7 text-slate-600">Segunda a sexta-feira, das 9h às 18h</p></div></div>
-              <div class="flex items-start gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700"><i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i></span><div><h3 class="text-[13px] font-extrabold text-navy">WhatsApp</h3><a class="mt-1 inline-block text-sm font-semibold text-royal hover:underline" href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Encontrei%20o%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer">+55 (21) 98856-2573</a></div></div>
-            </div>
-            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Encontrei%20o%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="focus-ring mt-9 inline-flex min-h-[55px] w-full items-center justify-center gap-3 rounded-2xl bg-emerald-600 px-6 py-4 text-center text-[14px] font-extrabold text-white shadow-[0_12px_28px_rgba(5,150,105,.18)] transition hover:bg-emerald-700 sm:w-auto"><i class="fa-brands fa-whatsapp text-[22px]" aria-hidden="true"></i> Falar no WhatsApp</a>
-          </div>
-          <div class="relative flex min-h-[340px] flex-col justify-between overflow-hidden bg-navy p-8 text-white sm:p-12 lg:min-h-full lg:p-14">
-            <div class="pointer-events-none absolute inset-0 opacity-20" style="background-image: radial-gradient(#93c5fd 1px, transparent 1px); background-size: 24px 24px; mask-image:linear-gradient(to right,transparent,#000);" aria-hidden="true"></div>
-            <div class="pointer-events-none absolute -right-32 -top-40 h-[420px] w-[420px] rounded-full border-[80px] border-cobalt/20" aria-hidden="true"></div>
-            <div class="relative z-10">
-              <div class="mb-12 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[12px] font-semibold text-emerald-200"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Estamos em Jacarepaguá</div>
-              <h3 class="max-w-sm font-display text-[30px] font-extrabold leading-tight tracking-[-.04em] sm:text-[36px]">Freguesia, RJ.<br><span class="text-emerald-300">Perto de você.</span></h3>
-              <p class="mt-5 max-w-sm text-sm leading-7 text-slate-300">Atendimento na região com a conveniência dos canais digitais para clientes de todo o Rio de Janeiro.</p>
-            </div>
-            <div class="relative z-10 mt-12 flex flex-wrap gap-3">
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=Freguesia%2C%20Jacarepagua%2C%20Rio%20de%20Janeiro%20RJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-white/25 bg-white/10 px-4 py-3 text-[13px] font-bold text-white transition hover:bg-white/20"><i class="fa-solid fa-map-location-dot text-emerald-300" aria-hidden="true"></i> Ver região no mapa <i class="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i></a>
-              <span class="self-center text-[11px] leading-5 text-slate-400">Mapa ilustrativo da região, não do endereço do escritório.</span>
-            </div>
-          </div>
+    <section class="testimonials section-pad" id="depoimentos" aria-labelledby="depoimentos-title">
+      <div class="container">
+        <div class="heading-row reveal"><div><span class="eyebrow">A experiência de ser bem cuidada</span><h2 class="section-heading" id="depoimentos-title">O carinho está em <em>cada detalhe.</em></h2></div><p class="demo-note"><strong>Conteúdo demonstrativo:</strong> os três depoimentos abaixo são fictícios e não representam pacientes reais. Substitua-os por avaliações autorizadas antes da publicação comercial.</p></div>
+        <div class="testimonial-grid">
+          <article class="testimonial reveal"><span class="quote-icon" aria-hidden="true">“</span><blockquote>Eu buscava um atendimento que valorizasse meu rosto sem mudar quem eu sou. Me senti acolhida desde a primeira conversa.</blockquote><div class="testimonial-footer"><strong>Paciente A. · Exemplo fictício</strong><span>Cachambi / RJ</span></div></article>
+          <article class="testimonial reveal"><span class="quote-icon" aria-hidden="true">“</span><blockquote>Gostei da atenção aos detalhes e da explicação cuidadosa das possibilidades. É importante sentir confiança para decidir.</blockquote><div class="testimonial-footer"><strong>Paciente B. · Exemplo fictício</strong><span>Méier / RJ</span></div></article>
+          <article class="testimonial reveal"><span class="quote-icon" aria-hidden="true">“</span><blockquote>O que mais me marcou foi a conversa individualizada e o respeito ao resultado natural que eu estava procurando.</blockquote><div class="testimonial-footer"><strong>Paciente C. · Exemplo fictício</strong><span>Zona Norte / RJ</span></div></article>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="perguntas" aria-labelledby="faq-title" class="bg-white py-20 sm:py-24">
-      <div class="page-container grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:gap-16">
-        <div><span class="section-kicker">Dúvidas frequentes</span><h2 id="faq-title" class="mt-4 max-w-md font-display text-[31px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[39px]">Respostas claras para começar com tranquilidade.</h2><p class="mt-5 max-w-md text-[15px] leading-8 text-slate-600">Não encontrou sua dúvida? Fale diretamente pelo WhatsApp.</p></div>
-        <div class="faq space-y-3">
-          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">Posso trocar de contador com a empresa em funcionamento?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Sim. A troca pode ser planejada sem interromper as atividades da empresa. Avaliamos sua situação e orientamos a transição da documentação e das obrigações.</p></details>
-          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">Vocês atendem MEI e ajudam na mudança para ME?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Sim. O atendimento inclui orientação sobre obrigações do MEI, declaração anual, emissão de notas e análise dos procedimentos para migrar para microempresa.</p></details>
-          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">É possível contratar o atendimento totalmente online?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Sim. Além do atendimento presencial na região da Freguesia, você pode tratar das suas demandas contábeis pelos canais digitais.</p></details>
-          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">Como funciona a análise inicial?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Você nos conta sua necessidade pelo WhatsApp. Fazemos uma análise inicial gratuita do cenário apresentado e explicamos as opções de atendimento, etapas e valores dos serviços que forem necessários.</p></details>
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="reveal"><span class="eyebrow">Dúvidas frequentes</span><h2 class="section-heading" id="faq-title">Tudo começa com uma <em>boa conversa.</em></h2><p class="section-description">Tem alguma dúvida sobre procedimentos ou avaliação? Nossa equipe pode orientar o próximo passo pelo WhatsApp.</p></div>
+        <div class="faq-list reveal">
+          <details><summary>Como faço para agendar uma avaliação? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Clique em qualquer botão de WhatsApp do site, envie sua mensagem e consulte os horários disponíveis diretamente com a clínica.</p></details>
+          <details><summary>Como saber qual procedimento é indicado para mim? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>A escolha depende de avaliação profissional, objetivos, características individuais, histórico de saúde e possíveis contraindicações. Nem todo procedimento é indicado para todas as pessoas.</p></details>
+          <details><summary>Os resultados são iguais para todo mundo? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Não. Resultados, duração, necessidade de sessões e recuperação podem variar entre pessoas e procedimentos. A avaliação é o momento de alinhar expectativas realistas.</p></details>
+          <details><summary>Onde fica o atendimento? <svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>A MR Bioestética atende na região do Cachambi / Méier, Zona Norte do Rio de Janeiro. Confirme o endereço completo e a disponibilidade antes de se deslocar.</p></details>
         </div>
       </div>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="bg-white pb-20 sm:pb-28" aria-labelledby="cta-title">
-      <div class="page-container">
-        <div class="relative overflow-hidden rounded-[28px] bg-gradient-to-r from-royal to-navy px-7 py-11 text-center sm:px-12 sm:py-14">
-          <div class="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full border-[55px] border-white/5" aria-hidden="true"></div>
-          <h2 id="cta-title" class="relative mx-auto max-w-2xl font-display text-[27px] font-extrabold leading-tight tracking-tight text-white sm:text-[36px]">Cuide do seu negócio. A gente ajuda a cuidar da contabilidade.</h2>
-          <p class="relative mx-auto mt-4 max-w-xl text-[14px] leading-7 text-blue-100">Converse sobre seus desafios e descubra como podemos ajudar.</p>
-          <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20como%20a%20Francimar%20Lima%20pode%20ajudar%20na%20contabilidade%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer" class="focus-ring relative mt-7 inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-emerald-500 px-7 py-4 text-[14px] font-extrabold text-navy transition hover:bg-emerald-300"><i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Conversar com o contador</a>
+    <section class="contact" id="contato" aria-labelledby="contato-title">
+      <div class="container contact-grid">
+        <div class="reveal"><span class="eyebrow">Seu próximo capítulo de autocuidado</span><h2 class="section-heading" id="contato-title">Sua beleza merece atenção <em>especial.</em></h2><p class="contact-lead">Agende sua avaliação e descubra um atendimento pensado para valorizar sua identidade, com escuta, orientação e cuidado em cada detalhe.</p><a class="btn btn-gold" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Gostaria de falar diretamente com você e agendar uma avaliação na MR Bioestética."><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar diretamente com a Dra. Mara no WhatsApp</a><p class="contact-footnote">O agendamento e a confirmação de disponibilidade são feitos pelo WhatsApp.</p></div>
+        <div class="contact-info reveal">
+          <div class="info-row"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Onde estamos</strong><span>Cachambi / Méier — Zona Norte<br>Rio de Janeiro — RJ<br>Endereço completo a confirmar no agendamento.</span></div></div>
+          <div class="info-row"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><div><strong>WhatsApp para agendamentos</strong><a href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá! Gostaria de informações e agendamento na MR Bioestética.">(21) 96828-3870</a></div></div>
+          <div class="info-row"><svg aria-hidden="true"><use href="#i-instagram"/></svg><div><strong>Acompanhe no Instagram</strong><a href="https://www.instagram.com/mrbioestetica/" target="_blank" rel="noopener noreferrer">@mrbioestetica</a></div></div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- RODAPÉ -->
-  <footer class="border-t border-slate-800 bg-navy py-14 text-slate-300">
-    <div class="page-container grid gap-10 md:grid-cols-3 lg:grid-cols-[1.3fr_1fr_1fr]">
-      <div>
-        <a href="#inicio" class="inline-flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-xl bg-white font-display text-lg font-extrabold tracking-[-.1em] text-navy">FL<span class="text-emerald-500">.</span></span><span><strong class="block font-display text-[17px] font-extrabold text-white">Francimar Lima</strong><small class="block text-[10px] font-medium uppercase tracking-[.1em] text-slate-400">Contabilidade &amp; Gestão Empresarial</small></span></a>
-        <p class="mt-6 max-w-sm text-[13px] leading-7 text-slate-400">Contabilidade descomplicada, atendimento próximo e soluções para a organização e o crescimento do seu negócio.</p>
-      </div>
-      <div><h3 class="font-display text-[14px] font-bold text-white">Serviços</h3><ul class="mt-5 space-y-3 text-[13px] text-slate-400"><li><a class="hover:text-white" href="#servicos">Abertura de empresas e MEI</a></li><li><a class="hover:text-white" href="#servicos">Contabilidade empresarial</a></li><li><a class="hover:text-white" href="#servicos">Imposto de Renda</a></li><li><a class="hover:text-white" href="#servicos">Departamento pessoal e eSocial</a></li><li><a class="hover:text-white" href="#servicos">Regularização fiscal</a></li></ul></div>
-      <div><h3 class="font-display text-[14px] font-bold text-white">Contato</h3><ul class="mt-5 space-y-4 text-[13px] text-slate-400"><li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-emerald-400" aria-hidden="true"></i> Freguesia, Jacarepaguá<br>Rio de Janeiro — RJ</li><li class="flex items-center gap-3"><i class="fa-regular fa-clock text-emerald-400" aria-hidden="true"></i> Seg. a sex. · 9h às 18h</li><li class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-emerald-400" aria-hidden="true"></i><a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Encontrei%20o%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="hover:text-white">(21) 98856-2573</a></li></ul></div>
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand" href="#inicio" aria-label="MR Bioestética — início"><span class="brand-seal" aria-hidden="true">MR</span><span class="brand-text"><span class="brand-title">MR Bioestética</span><span class="brand-subtitle">Dra. Mara Regina</span></span></a><p class="footer-description">Biomedicina Estética e harmonização facial e corporal com atendimento próximo, foco em naturalidade e cuidado individualizado na Zona Norte do Rio de Janeiro.</p></div>
+      <div><h3>Explore</h3><div class="footer-links"><a href="#procedimentos">Procedimentos</a><a href="#diferenciais">Nossos diferenciais</a><a href="#sobre">Sobre a especialista</a><a href="#depoimentos">Depoimentos demonstrativos</a><a href="#contato">Contato</a></div></div>
+      <div><h3>Entre em contato</h3><div class="footer-links"><a href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá! Encontrei o site da MR Bioestética e gostaria de mais informações.">WhatsApp: (21) 96828-3870</a><a href="https://www.instagram.com/mrbioestetica/" target="_blank" rel="noopener noreferrer">Instagram: @mrbioestetica</a><span>Cachambi / Méier, Rio de Janeiro — RJ</span></div></div>
     </div>
-    <div class="page-container mt-12 flex flex-col justify-between gap-4 border-t border-white/10 pt-7 text-[12px] text-slate-500 sm:flex-row sm:items-center">
-      <p>© <span id="current-year">2026</span> Francimar Lima — Contabilidade e Gestão. Todos os direitos reservados.</p>
-      <p>Freguesia · Jacarepaguá · Rio de Janeiro</p>
-    </div>
+    <div class="container footer-bottom"><p>© <span id="ano">2026</span> MR Bioestética — Dra. Mara Regina. Todos os direitos reservados.</p><p>As informações são institucionais e não substituem avaliação profissional. Resultados individuais podem variar.</p></div>
   </footer>
 
-  <!-- WHATSAPP FIXO -->
-  <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Francimar Lima pelo WhatsApp" title="Fale conosco pelo WhatsApp" class="float-whatsapp focus-ring fixed bottom-5 right-5 z-[60] grid h-[62px] w-[62px] place-items-center rounded-full border-[3px] border-white bg-[#16A34A] text-[31px] text-white transition hover:-translate-y-1 hover:bg-[#15803D] sm:bottom-7 sm:right-7"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+  <a class="wa-float" href="https://wa.me/5521968283870" target="_blank" rel="noopener noreferrer" data-message="Olá, Dra. Mara! Vim pelo site e gostaria de agendar uma avaliação." aria-label="Agendar avaliação pelo WhatsApp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
 
   <script>
-    (function () {
+    (() => {
       'use strict';
-      var menuButton = document.getElementById('menu-button');
-      var mobileNavigation = document.getElementById('mobile-navigation');
-      var menuIcon = document.getElementById('menu-icon');
-      var yearElement = document.getElementById('current-year');
-      if (yearElement) yearElement.textContent = new Date().getFullYear();
-      if (!menuButton || !mobileNavigation) return;
+      const number = '5521968283870';
+      document.querySelectorAll('[data-message]').forEach((link) => {
+        const message = link.getAttribute('data-message') || '';
+        link.href = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+      });
 
-      function setMenu(open) {
-        mobileNavigation.classList.toggle('hidden', !open);
-        menuButton.setAttribute('aria-expanded', String(open));
-        menuButton.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
-        menuIcon.classList.toggle('fa-bars', !open);
-        menuIcon.classList.toggle('fa-xmark', open);
-      }
-      menuButton.addEventListener('click', function () {
-        setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
+      const toggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      const icon = document.getElementById('menu-icon');
+      const closeMenu = () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Abrir menu');
+        icon.setAttribute('href', '#i-menu');
+      };
+      toggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+        icon.setAttribute('href', open ? '#i-close' : '#i-menu');
       });
-      mobileNavigation.querySelectorAll('a').forEach(function (anchor) {
-        anchor.addEventListener('click', function () { setMenu(false); });
-      });
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
-          setMenu(false);
-          menuButton.focus();
-        }
-      });
-      document.addEventListener('click', function (event) {
-        if (menuButton.getAttribute('aria-expanded') === 'true' && !menuButton.contains(event.target) && !mobileNavigation.contains(event.target)) setMenu(false);
-      });
-      window.addEventListener('resize', function () {
-        if (window.innerWidth >= 1024) setMenu(false);
-      });
-    }());
+      navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+      document.addEventListener('click', (e) => { if (!toggle.contains(e.target) && !navLinks.contains(e.target)) closeMenu(); });
+      window.addEventListener('resize', () => { if (window.innerWidth > 860) closeMenu(); });
+
+      const year = document.getElementById('ano');
+      if (year) year.textContent = String(new Date().getFullYear());
+
+      const elements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); obs.unobserve(entry.target); }
+          });
+        }, { threshold: .09, rootMargin: '0px 0px 35px 0px' });
+        elements.forEach(el => observer.observe(el));
+      } else elements.forEach(el => el.classList.add('visible'));
+    })();
   </script>
 </body>
 </html>
