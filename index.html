@@ -1,198 +1,238 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maison Meyer Beleza e Estética | Méier, Rio de Janeiro</title>
-<meta name="description" content="Salão de beleza e estética no Méier, Rio de Janeiro. Cabelo, unhas, sobrancelhas e skincare com hora marcada.">
+<title>Clínica Vital Méier | Psicologia, Neuropsicologia, Fonoaudiologia, TO e Nutrição</title>
+<meta name="description" content="Clínica multidisciplinar no Méier, Rio de Janeiro. Psicologia, Neuropsicologia, Fonoaudiologia, Terapia Ocupacional e Nutrição com atendimento humanizado.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config={theme:{extend:{colors:{creme:'#FAF6EF',areia:'#F1E8DA',ouro:'#B8893B',terra:'#A8573A',tinta:'#2A211C'},fontFamily:{serif:['"Playfair Display"','Georgia','serif'],sans:['"Plus Jakarta Sans"','system-ui','sans-serif']}}}}
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { display: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'sans-serif'] },
+      colors: { vital: { 500: '#10B981', 700: '#047857', 50: '#ECFDF5', 100: '#D1FAE5' }, ink: '#1E293B', paper: '#F8FAFC' }
+    }
+  }
+}
 </script>
 <style>
-html{scroll-behavior:smooth}
-@keyframes pulseWa{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-.wa-float{animation:pulseWa 2.4s infinite}
-.img-fallback{background:linear-gradient(135deg,#E8D7BC,#C9A36A)}
-@media (prefers-reduced-motion:reduce){.wa-float{animation:none}html{scroll-behavior:auto}}
-a:focus-visible,button:focus-visible{outline:2px solid #B8893B;outline-offset:3px}
+  html { scroll-padding-top: 5rem; }
+  :focus-visible { outline: 3px solid #047857; outline-offset: 3px; border-radius: 8px; }
+  @keyframes pop { from { opacity: 0; transform: translateY(12px) scale(.96); } to { opacity: 1; transform: none; } }
+  .pop { animation: pop .7s .3s both ease-out; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pop { animation: none; } }
 </style>
 </head>
-<body class="bg-creme text-tinta font-sans antialiased">
+<body class="bg-paper font-sans text-ink antialiased">
 
 <!-- Navbar -->
-<header class="sticky top-0 z-40 bg-creme/90 backdrop-blur border-b border-areia">
-  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-    <a href="#topo" class="font-serif text-xl sm:text-2xl font-semibold tracking-tight">Maison Meyer<span class="hidden sm:inline text-ouro font-normal italic text-base ml-2">Beleza e Estética</span></a>
-    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-      <a href="#servicos" class="hover:text-terra transition">Serviços</a>
-      <a href="#sobre" class="hover:text-terra transition">Sobre</a>
-      <a href="#localizacao" class="hover:text-terra transition">Localização</a>
-    </nav>
-    <a href="#" data-wa="Olá! Gostaria de agendar um horário na Maison Meyer." class="wa inline-flex items-center gap-2 bg-[#1FA855] hover:bg-[#178a45] text-white text-sm font-semibold px-4 py-2.5 rounded-full transition">
-      <i data-lucide="message-circle" class="w-4 h-4"></i><span class="hidden sm:inline">Agendar no WhatsApp</span><span class="sm:hidden">Agendar</span>
+<header class="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5" aria-label="Principal">
+    <a href="#inicio" class="flex items-center gap-2.5 font-display text-lg font-extrabold text-vital-700">
+      <span class="grid h-9 w-9 place-items-center rounded-xl bg-vital-500 text-white"><i class="fa-solid fa-leaf text-sm"></i></span>
+      Clínica Vital Méier
     </a>
+    <div class="hidden items-center gap-8 text-sm font-medium md:flex">
+      <a href="#especialidades" class="hover:text-vital-700">Especialidades</a>
+      <a href="#sobre" class="hover:text-vital-700">Sobre Nós</a>
+      <a href="#avaliacoes" class="hover:text-vital-700">Avaliações</a>
+      <a href="#localizacao" class="hover:text-vital-700">Localização</a>
+      <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="rounded-full bg-vital-700 px-5 py-2.5 font-semibold text-white shadow-sm transition hover:bg-vital-500">Agendar Consulta</a>
+    </div>
+    <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 md:hidden" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <div id="menu" class="hidden border-t border-slate-200 bg-white px-5 pb-5 pt-2 md:hidden">
+    <div class="flex flex-col gap-1 text-base font-medium">
+      <a href="#especialidades" class="rounded-lg px-2 py-3">Especialidades</a>
+      <a href="#sobre" class="rounded-lg px-2 py-3">Sobre Nós</a>
+      <a href="#avaliacoes" class="rounded-lg px-2 py-3">Avaliações</a>
+      <a href="#localizacao" class="rounded-lg px-2 py-3">Localização</a>
+      <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="mt-2 rounded-full bg-vital-700 px-5 py-3 text-center font-semibold text-white">Agendar Consulta</a>
+    </div>
   </div>
 </header>
 
+<main>
 <!-- Hero -->
-<section id="topo" class="relative">
-  <div class="max-w-6xl mx-auto px-5 py-14 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+<section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-white to-paper">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 md:py-20 lg:grid-cols-2">
     <div>
-      <p class="text-sm text-terra font-medium mb-4 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i>Méier, Rio de Janeiro</p>
-      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.1] font-medium">A beleza que o Méier merece, com hora marcada para você.</h1>
-      <p class="mt-6 text-lg text-tinta/75 max-w-lg leading-relaxed">Cabelo, unhas, sobrancelhas e cuidados com a pele em um espaço acolhedor, com profissionais que escutam o que você quer antes de começar.</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <a href="#" data-wa="Olá! Vi o site e quero agendar um horário." class="wa inline-flex justify-center items-center gap-2 bg-[#1FA855] hover:bg-[#178a45] text-white font-semibold px-7 py-4 rounded-full text-base transition shadow-lg shadow-green-900/10">
-          <i data-lucide="calendar-check" class="w-5 h-5"></i>Agendar meu horário
+      <p class="inline-flex items-center gap-2 rounded-full bg-vital-50 px-4 py-2 text-sm font-semibold text-vital-700 ring-1 ring-vital-100">
+        <span class="text-amber-500">★</span> 4,9 no Google (Mais de 135 avaliações reais)
+      </p>
+      <h1 class="mt-6 font-display text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl">Cuidado integral para a sua saúde e bem-estar no coração do Méier.</h1>
+      <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">Atendimento humanizado e multidisciplinar em Psicologia, Neuropsicologia, Fonoaudiologia, Terapia Ocupacional e Nutrição.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 rounded-full bg-vital-700 px-7 py-4 font-semibold text-white shadow-lg shadow-vital-700/20 transition hover:bg-vital-500">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Agendar pelo WhatsApp
         </a>
-        <a href="#servicos" class="inline-flex justify-center items-center px-7 py-4 rounded-full border border-ouro text-tinta font-semibold hover:bg-areia transition">Ver serviços</a>
+        <a href="#especialidades" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-semibold transition hover:border-vital-500 hover:text-vital-700">Conhecer Especialidades</a>
       </div>
     </div>
     <div class="relative">
-      <div class="img-fallback rounded-[2rem] overflow-hidden aspect-[4/5] sm:aspect-[5/5] lg:aspect-[4/5] shadow-xl">
-        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80" alt="Cliente em atendimento no salão" class="w-full h-full object-cover" onerror="this.remove()">
+      <div class="aspect-[4/5] overflow-hidden rounded-[2rem] bg-vital-100 shadow-xl sm:aspect-[5/4] lg:aspect-[4/5]">
+        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1000&q=80" alt="Atendimento acolhedor em consultório terapêutico" class="h-full w-full object-cover" loading="eager" onerror="this.style.display='none'">
       </div>
-      <div class="absolute -bottom-5 left-4 sm:-left-5 bg-creme border border-areia rounded-2xl px-5 py-4 shadow-lg flex items-center gap-3">
-        <div class="flex text-ouro"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
-        <span class="text-sm font-medium">5,0 no Google</span>
+      <div class="pop absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-100 sm:left-[-1.5rem]">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-vital-50 text-vital-700"><i class="fa-solid fa-people-group"></i></span>
+        <div class="text-sm leading-tight"><p class="font-display font-bold">5 especialidades</p><p class="text-slate-500">no mesmo endereço</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Credibilidade -->
-<section class="bg-areia">
-  <div class="max-w-6xl mx-auto px-5 py-8 grid sm:grid-cols-3 gap-6">
-    <div class="flex items-center gap-4"><span class="w-11 h-11 rounded-full bg-creme text-ouro flex items-center justify-center shrink-0"><i data-lucide="star" class="w-5 h-5"></i></span><p class="font-medium">Avaliação 5 estrelas<br><span class="text-sm text-tinta/65 font-normal">no Google</span></p></div>
-    <div class="flex items-center gap-4"><span class="w-11 h-11 rounded-full bg-creme text-ouro flex items-center justify-center shrink-0"><i data-lucide="clock" class="w-5 h-5"></i></span><p class="font-medium">Atendimento com hora marcada<br><span class="text-sm text-tinta/65 font-normal">sem espera na recepção</span></p></div>
-    <div class="flex items-center gap-4"><span class="w-11 h-11 rounded-full bg-creme text-ouro flex items-center justify-center shrink-0"><i data-lucide="award" class="w-5 h-5"></i></span><p class="font-medium">Profissionais especializados<br><span class="text-sm text-tinta/65 font-normal">em constante atualização</span></p></div>
+<!-- Especialidades -->
+<section id="especialidades" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+  <div class="max-w-2xl">
+    <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Especialidades que trabalham juntas pelo seu cuidado</h2>
+    <p class="mt-4 text-lg text-slate-600">Cada área conversa com as outras, para que o acompanhamento faça sentido para você e para a sua família.</p>
   </div>
-</section>
-
-<!-- Serviços -->
-<section id="servicos" class="max-w-6xl mx-auto px-5 py-20">
-  <div class="max-w-xl">
-    <h2 class="font-serif text-3xl sm:text-4xl font-medium">Nossos serviços</h2>
-    <p class="mt-3 text-tinta/70">Escolha o que você precisa e a gente confirma o melhor horário pelo WhatsApp.</p>
+  <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-regular fa-heart"></i></span>
+      <h3 class="mt-5 font-display text-xl font-bold">Psicologia</h3>
+      <p class="mt-2 leading-relaxed text-slate-600">Atendimento infantil, adolescente e adulto para ansiedade, depressão e desenvolvimento emocional.</p>
+    </article>
+    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-solid fa-brain"></i></span>
+      <h3 class="mt-5 font-display text-xl font-bold">Neuropsicologia</h3>
+      <p class="mt-2 leading-relaxed text-slate-600">Avaliação neuropsicológica completa e reabilitação cognitiva.</p>
+    </article>
+    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-regular fa-comments"></i></span>
+      <h3 class="mt-5 font-display text-xl font-bold">Fonoaudiologia</h3>
+      <p class="mt-2 leading-relaxed text-slate-600">Desenvolvimento da fala, linguagem, motricidade orofacial e distúrbios de aprendizagem.</p>
+    </article>
+    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-regular fa-hand"></i></span>
+      <h3 class="mt-5 font-display text-xl font-bold">Terapia Ocupacional</h3>
+      <p class="mt-2 leading-relaxed text-slate-600">Autonomia, integração sensorial e desenvolvimento motor e funcional.</p>
+    </article>
+    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:col-span-2 lg:col-span-1">
+      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-solid fa-apple-whole"></i></span>
+      <h3 class="mt-5 font-display text-xl font-bold">Nutrição</h3>
+      <p class="mt-2 leading-relaxed text-slate-600">Reeducação alimentar, nutrição clínica e comportamental para todas as idades.</p>
+    </article>
+    <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20saber%20qual%20especialidade%20%C3%A9%20ideal%20para%20mim." target="_blank" rel="noopener" class="flex flex-col justify-center rounded-3xl bg-vital-700 p-7 text-white shadow-sm transition hover:bg-vital-500 sm:col-span-2 lg:col-span-1">
+      <h3 class="font-display text-xl font-bold">Não sabe por onde começar?</h3>
+      <p class="mt-2 leading-relaxed text-vital-50">Conte seu caso pelo WhatsApp e a recepção indica o profissional certo.</p>
+      <span class="mt-4 inline-flex items-center gap-2 font-semibold"><i class="fa-brands fa-whatsapp text-lg"></i> Falar com a recepção</span>
+    </a>
   </div>
-  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="cards"></div>
 </section>
 
 <!-- Sobre -->
-<section id="sobre" class="bg-tinta text-creme">
-  <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
-    <div class="img-fallback rounded-[2rem] overflow-hidden aspect-[4/3]">
-      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80" alt="Profissional finalizando um penteado" class="w-full h-full object-cover" loading="lazy" onerror="this.remove()">
+<section id="sobre" class="bg-white">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:py-24 lg:grid-cols-5">
+    <div class="lg:col-span-2">
+      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Um espaço pensado para você se sentir em casa</h2>
+      <p class="mt-4 text-lg leading-relaxed text-slate-600">A Clínica Vital Méier reúne cinco áreas da saúde em um único lugar, com atendimento próximo, sem pressa e com um plano de cuidado feito sob medida para crianças, jovens e adultos.</p>
     </div>
-    <div>
-      <h2 class="font-serif text-3xl sm:text-4xl font-medium">Um lugar para você se sentir bem, do começo ao fim</h2>
-      <p class="mt-5 text-creme/75 leading-relaxed max-w-lg">Na Maison Meyer, cada atendimento começa com uma conversa. Entendemos seu estilo, sua rotina e o resultado que você espera, para que você saia daqui com a sensação de ter sido cuidada de verdade.</p>
-      <ul class="mt-8 space-y-5">
-        <li class="flex gap-4"><i data-lucide="circle-check" class="w-6 h-6 text-ouro shrink-0"></i><div><p class="font-semibold">Atendimento personalizado</p><p class="text-sm text-creme/65">Cada procedimento é pensado para o seu perfil.</p></div></li>
-        <li class="flex gap-4"><i data-lucide="circle-check" class="w-6 h-6 text-ouro shrink-0"></i><div><p class="font-semibold">Produtos de qualidade</p><p class="text-sm text-creme/65">Marcas profissionais, seguras e de confiança.</p></div></li>
-        <li class="flex gap-4"><i data-lucide="circle-check" class="w-6 h-6 text-ouro shrink-0"></i><div><p class="font-semibold">Ambiente limpo e acolhedor</p><p class="text-sm text-creme/65">Higiene rigorosa e um espaço para relaxar.</p></div></li>
-      </ul>
-    </div>
+    <dl class="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:col-span-3">
+      <div class="flex gap-4">
+        <i class="fa-solid fa-couch mt-1 w-6 text-xl text-vital-500"></i>
+        <div><dt class="font-display text-lg font-bold">Ambiente acolhedor</dt><dd class="mt-1 text-slate-600">Salas tranquilas e confortáveis, da recepção ao consultório.</dd></div>
+      </div>
+      <div class="flex gap-4">
+        <i class="fa-solid fa-user-doctor mt-1 w-6 text-xl text-vital-500"></i>
+        <div><dt class="font-display text-lg font-bold">Equipe qualificada</dt><dd class="mt-1 text-slate-600">Profissionais especializados que trabalham de forma integrada.</dd></div>
+      </div>
+      <div class="flex gap-4">
+        <i class="fa-solid fa-location-dot mt-1 w-6 text-xl text-vital-500"></i>
+        <div><dt class="font-display text-lg font-bold">Fácil de chegar</dt><dd class="mt-1 text-slate-600">No centro do Méier, com acesso simples por transporte e a pé.</dd></div>
+      </div>
+      <div class="flex gap-4">
+        <i class="fa-solid fa-hand-holding-heart mt-1 w-6 text-xl text-vital-500"></i>
+        <div><dt class="font-display text-lg font-bold">Atendimento personalizado</dt><dd class="mt-1 text-slate-600">Cada paciente recebe um plano próprio, para qualquer idade.</dd></div>
+      </div>
+    </dl>
   </div>
 </section>
 
-<!-- Depoimentos -->
-<section class="max-w-6xl mx-auto px-5 py-20">
-  <h2 class="font-serif text-3xl sm:text-4xl font-medium">O que dizem nossas clientes</h2>
-  <div class="mt-10 grid md:grid-cols-3 gap-6">
-    <figure class="bg-white/70 border border-areia rounded-2xl p-6">
-      <div class="flex text-ouro mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
-      <blockquote class="leading-relaxed">Fiz mechas e saí apaixonada. Me explicaram tudo e o resultado ficou natural, do jeito que eu queria.</blockquote>
-      <figcaption class="mt-5 text-sm font-semibold">Carolina M. <span class="font-normal text-tinta/60">· avaliação no Google</span></figcaption>
+<!-- Avaliações -->
+<section id="avaliacoes" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+  <div class="grid gap-6 lg:grid-cols-4">
+    <div class="rounded-3xl bg-vital-50 p-8 ring-1 ring-vital-100 lg:row-span-1">
+      <p class="font-display text-6xl font-extrabold text-vital-700">4,9</p>
+      <p class="mt-2 text-2xl text-amber-500" aria-label="5 estrelas">★★★★★</p>
+      <p class="mt-3 font-semibold">Nota no Google</p>
+      <p class="text-slate-600">Mais de 135 avaliações reais de pacientes.</p>
+    </div>
+    <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <p class="text-amber-500" aria-label="5 estrelas">★★★★★</p>
+      <blockquote class="mt-3 leading-relaxed text-slate-700">“Desde a recepção já dá para sentir o acolhimento. Minha filha ficou à vontade logo na primeira sessão e a evolução foi visível.”</blockquote>
+      <figcaption class="mt-4 text-sm font-semibold">Mariana S.<span class="font-normal text-slate-500"> · mãe de paciente</span></figcaption>
     </figure>
-    <figure class="bg-white/70 border border-areia rounded-2xl p-6">
-      <div class="flex text-ouro mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
-      <blockquote class="leading-relaxed">Pontualidade e capricho. A manicure é perfeita e o esmalte dura bem mais do que em outros lugares.</blockquote>
-      <figcaption class="mt-5 text-sm font-semibold">Renata S. <span class="font-normal text-tinta/60">· avaliação no Google</span></figcaption>
+    <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <p class="text-amber-500" aria-label="5 estrelas">★★★★★</p>
+      <blockquote class="mt-3 leading-relaxed text-slate-700">“Profissionais atenciosos e muito claros nas orientações. Fiz a avaliação neuropsicológica e saí entendendo cada resultado.”</blockquote>
+      <figcaption class="mt-4 text-sm font-semibold">Rafael C.<span class="font-normal text-slate-500"> · paciente adulto</span></figcaption>
     </figure>
-    <figure class="bg-white/70 border border-areia rounded-2xl p-6">
-      <div class="flex text-ouro mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
-      <blockquote class="leading-relaxed">Ambiente lindo e equipe muito simpática. Agendei pelo WhatsApp em dois minutos e fui atendida na hora marcada.</blockquote>
-      <figcaption class="mt-5 text-sm font-semibold">Juliana P. <span class="font-normal text-tinta/60">· avaliação no Google</span></figcaption>
+    <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+      <p class="text-amber-500" aria-label="5 estrelas">★★★★★</p>
+      <blockquote class="mt-3 leading-relaxed text-slate-700">“Atendimento pontual, ambiente limpo e equipe gentil. Os horários flexíveis ajudaram muito a encaixar o tratamento na minha rotina.”</blockquote>
+      <figcaption class="mt-4 text-sm font-semibold">Camila R.<span class="font-normal text-slate-500"> · paciente de nutrição</span></figcaption>
     </figure>
   </div>
 </section>
 
 <!-- Localização -->
-<section id="localizacao" class="bg-areia">
-  <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-10">
+<section id="localizacao" class="bg-white">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:py-24 lg:grid-cols-2">
     <div>
-      <h2 class="font-serif text-3xl sm:text-4xl font-medium">Venha nos visitar</h2>
-      <div class="mt-8 space-y-6">
-        <div class="flex gap-4"><i data-lucide="map-pin" class="w-5 h-5 text-terra mt-1 shrink-0"></i><div><p class="font-semibold">Endereço</p><p class="text-tinta/75">Rua Dias da Cruz, 123, sala 101<br>Méier, Rio de Janeiro - RJ, 20720-011</p></div></div>
-        <div class="flex gap-4"><i data-lucide="clock" class="w-5 h-5 text-terra mt-1 shrink-0"></i><div><p class="font-semibold">Horário de funcionamento</p><p class="text-tinta/75">Segunda a sexta, das 9h às 19h<br>Sábado, das 9h às 17h</p></div></div>
-        <div class="flex gap-4"><i data-lucide="phone" class="w-5 h-5 text-terra mt-1 shrink-0"></i><div><p class="font-semibold">Agendamentos</p><p class="text-tinta/75">Pelo WhatsApp, com resposta rápida</p></div></div>
-      </div>
-      <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Dias+da+Cruz+M%C3%A9ier+Rio+de+Janeiro" target="_blank" rel="noopener" class="inline-flex justify-center items-center gap-2 bg-tinta text-creme font-semibold px-6 py-3.5 rounded-full hover:bg-black transition"><i data-lucide="navigation" class="w-4 h-4"></i>Como chegar</a>
-        <a href="#" data-wa="Olá! Quero agendar e saber mais sobre como chegar." class="wa inline-flex justify-center items-center gap-2 bg-[#1FA855] text-white font-semibold px-6 py-3.5 rounded-full hover:bg-[#178a45] transition"><i data-lucide="message-circle" class="w-4 h-4"></i>Falar no WhatsApp</a>
+      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Venha nos visitar no Méier</h2>
+      <ul class="mt-8 space-y-6">
+        <li class="flex gap-4"><i class="fa-solid fa-location-dot mt-1 w-6 text-xl text-vital-500"></i>
+          <div><p class="font-semibold">Endereço</p><p class="text-slate-600">Rua Hemengarda, 60 - Salas 401 e 402<br>Méier, Rio de Janeiro - RJ</p></div></li>
+        <li class="flex gap-4"><i class="fa-regular fa-clock mt-1 w-6 text-xl text-vital-500"></i>
+          <div><p class="font-semibold">Horário de funcionamento</p><p class="text-slate-600">Segunda a Sexta, das 8h às 20h<br>Sábado, das 8h às 13h</p></div></li>
+        <li class="flex gap-4"><i class="fa-brands fa-whatsapp mt-1 w-6 text-xl text-vital-500"></i>
+          <div><p class="font-semibold">WhatsApp</p><p class="text-slate-600">+55 21 99755-9903</p></div></li>
+        <li class="flex gap-4"><i class="fa-brands fa-instagram mt-1 w-6 text-xl text-vital-500"></i>
+          <div><p class="font-semibold">Instagram</p><a href="https://instagram.com/clinicavitalmeier" target="_blank" rel="noopener" class="text-slate-600 underline decoration-vital-500 underline-offset-4 hover:text-vital-700">@clinicavitalmeier</a></div></li>
+      </ul>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 rounded-full bg-vital-700 px-7 py-4 font-semibold text-white transition hover:bg-vital-500"><i class="fa-brands fa-whatsapp text-xl"></i> Chamar no WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Hemengarda+60+M%C3%A9ier+Rio+de+Janeiro+RJ" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 rounded-full border border-slate-300 px-7 py-4 font-semibold transition hover:border-vital-500 hover:text-vital-700"><i class="fa-solid fa-map-location-dot"></i> Abrir no Google Maps</a>
       </div>
     </div>
-    <!-- Mapa simulado -->
-    <div class="relative rounded-[2rem] overflow-hidden min-h-[320px] border border-[#E0D2BC]" style="background:#EFE4D0">
-      <svg viewBox="0 0 400 320" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <rect width="400" height="320" fill="#EFE4D0"/>
-        <rect x="20" y="30" width="110" height="70" rx="8" fill="#E3D5BC"/><rect x="150" y="30" width="90" height="70" rx="8" fill="#E3D5BC"/><rect x="260" y="30" width="120" height="70" rx="8" fill="#DCE5CF"/>
-        <rect x="20" y="130" width="110" height="80" rx="8" fill="#E3D5BC"/><rect x="260" y="130" width="120" height="80" rx="8" fill="#E3D5BC"/>
-        <rect x="20" y="240" width="170" height="60" rx="8" fill="#E3D5BC"/><rect x="210" y="240" width="170" height="60" rx="8" fill="#E3D5BC"/>
-        <path d="M0 115 H400 M140 0 V320 M250 0 V320 M0 225 H400" stroke="#FFFFFF" stroke-width="14" fill="none"/>
-        <path d="M0 115 H400" stroke="#F5C98B" stroke-width="4" fill="none" opacity=".7"/>
-      </svg>
-      <div class="absolute left-[44%] top-[34%] -translate-x-1/2 -translate-y-full flex flex-col items-center">
-        <span class="bg-tinta text-creme text-xs font-semibold px-3 py-1.5 rounded-full shadow">Maison Meyer</span>
-        <i data-lucide="map-pin" class="w-10 h-10 text-terra fill-terra/20"></i>
-      </div>
+    <div class="min-h-[320px] overflow-hidden rounded-3xl bg-slate-100 shadow-sm ring-1 ring-slate-200">
+      <iframe title="Mapa da Clínica Vital Méier" class="h-full min-h-[320px] w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Hemengarda+60+M%C3%A9ier+Rio+de+Janeiro+RJ&output=embed"></iframe>
     </div>
   </div>
 </section>
+</main>
 
-<!-- Rodapé -->
-<footer class="bg-tinta text-creme/70">
-  <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-    <p class="font-serif text-xl text-creme">Maison Meyer <span class="text-ouro italic text-base">Beleza e Estética</span></p>
-    <p>Méier, Rio de Janeiro - RJ</p>
-    <p>© <span id="ano"></span> Maison Meyer. Todos os direitos reservados.</p>
+<!-- Footer -->
+<footer class="bg-ink text-slate-300">
+  <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-10 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p class="flex items-center gap-2 font-display text-lg font-extrabold text-white"><i class="fa-solid fa-leaf text-vital-500"></i> Clínica Vital Méier</p>
+      <p class="mt-2 text-sm">Rua Hemengarda, 60 - Salas 401 e 402, Méier, Rio de Janeiro - RJ</p>
+      <p class="text-sm">WhatsApp +55 21 99755-9903 · @clinicavitalmeier</p>
+    </div>
+    <p class="text-sm text-slate-400">© <span id="ano">2026</span> Clínica Vital Méier. Todos os direitos reservados.</p>
   </div>
 </footer>
 
 <!-- Botão flutuante -->
-<a href="#" data-wa="Olá! Gostaria de agendar um horário." aria-label="Agendar pelo WhatsApp" class="wa wa-float fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl hover:scale-105 transition">
-  <i data-lucide="message-circle" class="w-7 h-7"></i>
+<a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" class="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-3xl text-white shadow-xl shadow-black/20 transition hover:scale-105">
+  <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 <script>
-const WHATSAPP = "5521999999999";
-const servicos = [
-  {i:"scissors", n:"Corte e escova", d:"Corte sob medida e escova modelada para o dia a dia ou para uma ocasião especial."},
-  {i:"palette", n:"Coloração e mechas", d:"Cor, luzes e retoques com técnica e produtos que preservam a saúde dos fios."},
-  {i:"hand", n:"Manicure e pedicure", d:"Cuidado completo para mãos e pés, com esmaltação em gel e acabamento impecável."},
-  {i:"eye", n:"Design de sobrancelhas", d:"Design personalizado que valoriza seu rosto, com henna ou micropigmentação."},
-  {i:"sparkles", n:"Limpeza de pele", d:"Limpeza profunda e hidratação para uma pele renovada, macia e luminosa."},
-  {i:"flower-2", n:"Tratamentos capilares", d:"Hidratação, reconstrução e cronograma capilar para recuperar brilho e maciez."}
-];
-const wa = t => "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(t);
-document.getElementById("cards").innerHTML = servicos.map(s => `
-  <article class="bg-white/70 border border-areia rounded-2xl p-7 flex flex-col hover:border-ouro transition">
-    <span class="w-12 h-12 rounded-full bg-areia text-terra flex items-center justify-center"><i data-lucide="${s.i}" class="w-6 h-6"></i></span>
-    <h3 class="font-serif text-xl mt-5 font-semibold">${s.n}</h3>
-    <p class="mt-2 text-tinta/70 text-sm leading-relaxed flex-1">${s.d}</p>
-    <a href="#" data-wa="Olá! Quero agendar: ${s.n}." class="wa mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-terra hover:underline">Agendar este serviço<i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-  </article>`).join("");
-document.querySelectorAll("a.wa").forEach(a => {
-  a.href = wa(a.dataset.wa); a.target = "_blank"; a.rel = "noopener";
-});
-document.getElementById("ano").textContent = new Date().getFullYear();
-lucide.createIcons();
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  const btn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.add('hidden'); btn.setAttribute('aria-expanded', false); }));
 </script>
 </body>
 </html>
