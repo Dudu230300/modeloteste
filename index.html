@@ -1,238 +1,427 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clínica Vital Méier | Psicologia, Neuropsicologia, Fonoaudiologia, TO e Nutrição</title>
-<meta name="description" content="Clínica multidisciplinar no Méier, Rio de Janeiro. Psicologia, Neuropsicologia, Fonoaudiologia, Terapia Ocupacional e Nutrição com atendimento humanizado.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: { display: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'sans-serif'] },
-      colors: { vital: { 500: '#10B981', 700: '#047857', 50: '#ECFDF5', 100: '#D1FAE5' }, ink: '#1E293B', paper: '#F8FAFC' }
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="description" content="Francimar Lima — Contabilidade e Gestão Empresarial na Freguesia, Jacarepaguá, Rio de Janeiro. Abertura de empresas, MEI, contabilidade consultiva, Imposto de Renda, eSocial e regularização fiscal. Atendimento presencial e digital.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Francimar Lima | Contabilidade & Gestão Empresarial">
+  <meta property="og:description" content="Contabilidade descomplicada e segurança fiscal para a sua empresa crescer. Atendimento na Freguesia e em todo o Rio de Janeiro.">
+  <title>Francimar Lima | Contabilidade & Gestão Empresarial — Freguesia, RJ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0F172A', royal: '#1E3A8A', cobalt: '#2563EB', emerald: '#10B981', ice: '#F8FAFC'
+          },
+          fontFamily: {
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 60px rgba(15,23,42,.07)',
+            card: '0 14px 40px rgba(15,23,42,.075)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #334155; -webkit-font-smoothing: antialiased; }
+    h1,h2,h3,h4,.font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+    ::selection { color: #0f172a; background: #a7f3d0; }
+    .page-container { width: min(100% - 2.5rem, 1200px); margin-inline: auto; }
+    .grid-lines { background-image: linear-gradient(rgba(37,99,235,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.035) 1px,transparent 1px); background-size: 42px 42px; }
+    .hero-glow { background: radial-gradient(circle at 20% 30%,rgba(16,185,129,.10),transparent 30%), radial-gradient(circle at 78% 22%,rgba(37,99,235,.08),transparent 32%); }
+    .text-gradient { background: linear-gradient(105deg,#2563eb 8%,#059669 90%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .card-lift { transition: transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+    .card-lift:hover { transform: translateY(-5px); border-color: #a7f3d0; box-shadow: 0 20px 50px rgba(15,23,42,.10); }
+    .icon-tile { display: grid; place-items: center; width: 3.4rem; height: 3.4rem; flex-shrink: 0; border-radius: 1rem; background: #eff6ff; color: #1d4ed8; font-size: 1.25rem; }
+    .section-kicker { display:inline-flex; align-items:center; gap:.6rem; text-transform:uppercase; letter-spacing:.15em; font-size:.73rem; font-weight:800; color:#047857; }
+    .section-kicker::before { content:""; width:22px; height:2px; background: #10b981; border-radius: 4px; }
+    .focus-ring:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid #10b981; outline-offset:4px; }
+    .hero-image-wrap::before { content:""; position:absolute; inset:17px -18px -18px 20px; border:1px solid rgba(37,99,235,.13); border-radius:30px; z-index:-1; }
+    .faq details[open] summary .faq-plus { transform: rotate(45deg); background: #d1fae5; color: #047857; }
+    .faq-plus { transition: transform .2s ease,background .2s ease; }
+    .float-whatsapp { animation: soft-pulse 3.2s infinite; }
+    @keyframes soft-pulse { 0%,100%{box-shadow:0 12px 30px rgba(5,150,105,.30)} 50%{box-shadow:0 12px 38px rgba(5,150,105,.50)} }
+    @media (max-width: 767px) { html { scroll-padding-top:82px; } .page-container{ width:min(100% - 2rem,1200px); } }
+    @media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto;} *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;} }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Francimar Lima — Contabilidade e Gestão Empresarial",
+    "description": "Serviços de contabilidade e gestão empresarial, abertura de empresas, MEI, Imposto de Renda, departamento pessoal, eSocial e regularização fiscal.",
+    "telephone": "+55 21 98856-2573",
+    "areaServed": [
+      {"@type":"Place","name":"Freguesia, Jacarepaguá, Rio de Janeiro, RJ"},
+      {"@type":"City","name":"Rio de Janeiro"}
+    ],
+    "address": {"@type":"PostalAddress","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR","addressDistrict":"Freguesia, Jacarepaguá"},
+    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],
+    "contactPoint": {"@type":"ContactPoint","telephone":"+55 21 98856-2573","contactType":"customer service","availableLanguage":"Portuguese"}
   }
-}
-</script>
-<style>
-  html { scroll-padding-top: 5rem; }
-  :focus-visible { outline: 3px solid #047857; outline-offset: 3px; border-radius: 8px; }
-  @keyframes pop { from { opacity: 0; transform: translateY(12px) scale(.96); } to { opacity: 1; transform: none; } }
-  .pop { animation: pop .7s .3s both ease-out; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pop { animation: none; } }
-</style>
+  </script>
 </head>
-<body class="bg-paper font-sans text-ink antialiased">
+<body class="overflow-x-hidden">
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-4 focus:top-4 focus:rounded-xl focus:bg-white focus:px-4 focus:py-3 focus:text-navy focus:shadow-card">Pular para o conteúdo</a>
 
-<!-- Navbar -->
-<header class="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur">
-  <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5" aria-label="Principal">
-    <a href="#inicio" class="flex items-center gap-2.5 font-display text-lg font-extrabold text-vital-700">
-      <span class="grid h-9 w-9 place-items-center rounded-xl bg-vital-500 text-white"><i class="fa-solid fa-leaf text-sm"></i></span>
-      Clínica Vital Méier
-    </a>
-    <div class="hidden items-center gap-8 text-sm font-medium md:flex">
-      <a href="#especialidades" class="hover:text-vital-700">Especialidades</a>
-      <a href="#sobre" class="hover:text-vital-700">Sobre Nós</a>
-      <a href="#avaliacoes" class="hover:text-vital-700">Avaliações</a>
-      <a href="#localizacao" class="hover:text-vital-700">Localização</a>
-      <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="rounded-full bg-vital-700 px-5 py-2.5 font-semibold text-white shadow-sm transition hover:bg-vital-500">Agendar Consulta</a>
-    </div>
-    <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 md:hidden" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
-  </nav>
-  <div id="menu" class="hidden border-t border-slate-200 bg-white px-5 pb-5 pt-2 md:hidden">
-    <div class="flex flex-col gap-1 text-base font-medium">
-      <a href="#especialidades" class="rounded-lg px-2 py-3">Especialidades</a>
-      <a href="#sobre" class="rounded-lg px-2 py-3">Sobre Nós</a>
-      <a href="#avaliacoes" class="rounded-lg px-2 py-3">Avaliações</a>
-      <a href="#localizacao" class="rounded-lg px-2 py-3">Localização</a>
-      <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="mt-2 rounded-full bg-vital-700 px-5 py-3 text-center font-semibold text-white">Agendar Consulta</a>
+  <!-- CABEÇALHO -->
+  <div class="hidden border-b border-slate-100 bg-ice lg:block">
+    <div class="page-container flex h-10 items-center justify-between text-[12px] font-medium text-slate-500">
+      <p><i class="fa-solid fa-location-dot mr-2 text-emerald" aria-hidden="true"></i>Freguesia, Jacarepaguá · Rio de Janeiro, RJ</p>
+      <p><i class="fa-regular fa-clock mr-2 text-emerald" aria-hidden="true"></i>Segunda a sexta, das 9h às 18h <span class="mx-4 text-slate-300">|</span> Atendimento presencial e digital</p>
     </div>
   </div>
-</header>
-
-<main>
-<!-- Hero -->
-<section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-white to-paper">
-  <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 md:py-20 lg:grid-cols-2">
-    <div>
-      <p class="inline-flex items-center gap-2 rounded-full bg-vital-50 px-4 py-2 text-sm font-semibold text-vital-700 ring-1 ring-vital-100">
-        <span class="text-amber-500">★</span> 4,9 no Google (Mais de 135 avaliações reais)
-      </p>
-      <h1 class="mt-6 font-display text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl">Cuidado integral para a sua saúde e bem-estar no coração do Méier.</h1>
-      <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">Atendimento humanizado e multidisciplinar em Psicologia, Neuropsicologia, Fonoaudiologia, Terapia Ocupacional e Nutrição.</p>
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 rounded-full bg-vital-700 px-7 py-4 font-semibold text-white shadow-lg shadow-vital-700/20 transition hover:bg-vital-500">
-          <i class="fa-brands fa-whatsapp text-xl"></i> Agendar pelo WhatsApp
+  <header class="sticky top-0 z-50 border-b border-slate-100/90 bg-white/95 shadow-[0_3px_24px_rgba(15,23,42,.03)] backdrop-blur-xl">
+    <div class="page-container flex h-[78px] items-center justify-between gap-5">
+      <a href="#inicio" aria-label="Francimar Lima — voltar ao início" class="flex min-w-0 items-center gap-3 no-underline">
+        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-navy font-display text-lg font-extrabold tracking-[-.11em] text-white shadow-lg shadow-blue-950/15" aria-hidden="true">FL<span class="ml-0.5 text-emerald">.</span></span>
+        <span class="block min-w-0 leading-tight">
+          <strong class="block font-display text-[16px] font-extrabold tracking-tight text-navy sm:text-[18px]">Francimar Lima</strong>
+          <small class="mt-1 block text-[9px] font-semibold uppercase tracking-[.11em] text-slate-500 sm:text-[10px]">Contabilidade &amp; Gestão Empresarial</small>
+        </span>
+      </a>
+      <nav aria-label="Navegação principal" class="hidden items-center gap-7 xl:gap-9 lg:flex">
+        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#servicos">Serviços</a>
+        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#publico">Para Quem Atendemos</a>
+        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#diferenciais">Diferenciais</a>
+        <a class="text-[13px] font-semibold text-slate-600 transition hover:text-cobalt" href="#contato">Contato</a>
+      </nav>
+      <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20contador%20da%20Francimar%20Lima." target="_blank" rel="noopener noreferrer" class="focus-ring hidden items-center justify-center gap-2.5 rounded-xl bg-navy px-5 py-3.5 text-[13px] font-bold text-white shadow-lg shadow-blue-950/10 transition hover:-translate-y-0.5 hover:bg-royal md:inline-flex">
+        <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i> Falar com Contador
+      </a>
+      <button id="menu-button" type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Abrir menu de navegação" class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-navy transition hover:bg-slate-50 lg:hidden">
+        <i id="menu-icon" class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav id="mobile-navigation" aria-label="Navegação para dispositivos móveis" class="hidden border-t border-slate-100 bg-white px-4 pb-6 pt-3 shadow-xl lg:hidden">
+      <div class="mx-auto flex max-w-lg flex-col gap-1">
+        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#servicos">Serviços</a>
+        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#publico">Para Quem Atendemos</a>
+        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#diferenciais">Diferenciais</a>
+        <a class="rounded-xl px-4 py-3 font-semibold text-slate-700 hover:bg-ice" href="#contato">Contato</a>
+        <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20contador%20da%20Francimar%20Lima." target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex items-center justify-center gap-3 rounded-xl bg-navy px-5 py-3.5 font-bold text-white">
+          <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Falar com Contador
         </a>
-        <a href="#especialidades" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-semibold transition hover:border-vital-500 hover:text-vital-700">Conhecer Especialidades</a>
       </div>
-    </div>
-    <div class="relative">
-      <div class="aspect-[4/5] overflow-hidden rounded-[2rem] bg-vital-100 shadow-xl sm:aspect-[5/4] lg:aspect-[4/5]">
-        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1000&q=80" alt="Atendimento acolhedor em consultório terapêutico" class="h-full w-full object-cover" loading="eager" onerror="this.style.display='none'">
-      </div>
-      <div class="pop absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-100 sm:left-[-1.5rem]">
-        <span class="grid h-11 w-11 place-items-center rounded-xl bg-vital-50 text-vital-700"><i class="fa-solid fa-people-group"></i></span>
-        <div class="text-sm leading-tight"><p class="font-display font-bold">5 especialidades</p><p class="text-slate-500">no mesmo endereço</p></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </nav>
+  </header>
 
-<!-- Especialidades -->
-<section id="especialidades" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
-  <div class="max-w-2xl">
-    <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Especialidades que trabalham juntas pelo seu cuidado</h2>
-    <p class="mt-4 text-lg text-slate-600">Cada área conversa com as outras, para que o acompanhamento faça sentido para você e para a sua família.</p>
-  </div>
-  <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-regular fa-heart"></i></span>
-      <h3 class="mt-5 font-display text-xl font-bold">Psicologia</h3>
-      <p class="mt-2 leading-relaxed text-slate-600">Atendimento infantil, adolescente e adulto para ansiedade, depressão e desenvolvimento emocional.</p>
-    </article>
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-solid fa-brain"></i></span>
-      <h3 class="mt-5 font-display text-xl font-bold">Neuropsicologia</h3>
-      <p class="mt-2 leading-relaxed text-slate-600">Avaliação neuropsicológica completa e reabilitação cognitiva.</p>
-    </article>
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-regular fa-comments"></i></span>
-      <h3 class="mt-5 font-display text-xl font-bold">Fonoaudiologia</h3>
-      <p class="mt-2 leading-relaxed text-slate-600">Desenvolvimento da fala, linguagem, motricidade orofacial e distúrbios de aprendizagem.</p>
-    </article>
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-regular fa-hand"></i></span>
-      <h3 class="mt-5 font-display text-xl font-bold">Terapia Ocupacional</h3>
-      <p class="mt-2 leading-relaxed text-slate-600">Autonomia, integração sensorial e desenvolvimento motor e funcional.</p>
-    </article>
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:col-span-2 lg:col-span-1">
-      <span class="grid h-12 w-12 place-items-center rounded-2xl bg-vital-50 text-xl text-vital-700"><i class="fa-solid fa-apple-whole"></i></span>
-      <h3 class="mt-5 font-display text-xl font-bold">Nutrição</h3>
-      <p class="mt-2 leading-relaxed text-slate-600">Reeducação alimentar, nutrição clínica e comportamental para todas as idades.</p>
-    </article>
-    <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20saber%20qual%20especialidade%20%C3%A9%20ideal%20para%20mim." target="_blank" rel="noopener" class="flex flex-col justify-center rounded-3xl bg-vital-700 p-7 text-white shadow-sm transition hover:bg-vital-500 sm:col-span-2 lg:col-span-1">
-      <h3 class="font-display text-xl font-bold">Não sabe por onde começar?</h3>
-      <p class="mt-2 leading-relaxed text-vital-50">Conte seu caso pelo WhatsApp e a recepção indica o profissional certo.</p>
-      <span class="mt-4 inline-flex items-center gap-2 font-semibold"><i class="fa-brands fa-whatsapp text-lg"></i> Falar com a recepção</span>
-    </a>
-  </div>
-</section>
-
-<!-- Sobre -->
-<section id="sobre" class="bg-white">
-  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:py-24 lg:grid-cols-5">
-    <div class="lg:col-span-2">
-      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Um espaço pensado para você se sentir em casa</h2>
-      <p class="mt-4 text-lg leading-relaxed text-slate-600">A Clínica Vital Méier reúne cinco áreas da saúde em um único lugar, com atendimento próximo, sem pressa e com um plano de cuidado feito sob medida para crianças, jovens e adultos.</p>
-    </div>
-    <dl class="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:col-span-3">
-      <div class="flex gap-4">
-        <i class="fa-solid fa-couch mt-1 w-6 text-xl text-vital-500"></i>
-        <div><dt class="font-display text-lg font-bold">Ambiente acolhedor</dt><dd class="mt-1 text-slate-600">Salas tranquilas e confortáveis, da recepção ao consultório.</dd></div>
+  <main id="conteudo">
+    <!-- HERO -->
+    <section id="inicio" aria-labelledby="hero-title" class="hero-glow grid-lines relative isolate overflow-hidden bg-white pt-14 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32">
+      <div class="page-container grid items-center gap-14 lg:grid-cols-[1.06fr_.94fr] lg:gap-16">
+        <div class="relative z-10 max-w-[670px]">
+          <div class="mb-7 inline-flex max-w-full items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/90 px-3.5 py-2 text-[11px] font-bold leading-5 text-emerald-800 sm:text-[12px]">
+            <span class="flex h-2 w-2 shrink-0 rounded-full bg-emerald" aria-hidden="true"></span>
+            Atendimento especializado na Freguesia e todo o Rio de Janeiro
+          </div>
+          <h1 id="hero-title" class="font-display text-[clamp(2.5rem,5.05vw,4.25rem)] font-extrabold leading-[1.13] tracking-[-.048em] text-navy">
+            Contabilidade descomplicada e <span class="text-gradient">segurança fiscal</span> para a sua empresa crescer.
+          </h1>
+          <p class="mt-7 max-w-[580px] text-[16px] leading-[1.9] text-slate-600 sm:text-[17px]">
+            Abertura de empresas, gestão de MEI, planejamento tributário, Imposto de Renda e eSocial com atendimento próximo e transparente.
+          </p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20servi%C3%A7os%20cont%C3%A1beis." target="_blank" rel="noopener noreferrer" class="focus-ring inline-flex min-h-[56px] items-center justify-center gap-3 rounded-2xl bg-emerald-600 px-6 py-4 text-center text-[14px] font-bold text-white shadow-[0_14px_28px_rgba(5,150,105,.20)] transition hover:-translate-y-0.5 hover:bg-emerald-700">
+              <i class="fa-brands fa-whatsapp text-[22px]" aria-hidden="true"></i> Solicitar Orçamento no WhatsApp <i class="fa-solid fa-arrow-up-right-from-square text-[11px] opacity-75" aria-hidden="true"></i>
+            </a>
+            <a href="#servicos" class="focus-ring inline-flex min-h-[56px] items-center justify-center gap-2.5 rounded-2xl border border-slate-200 bg-white px-6 py-4 text-[14px] font-bold text-navy shadow-sm transition hover:border-blue-200 hover:bg-ice">
+              Conhecer Serviços <i class="fa-solid fa-arrow-down text-xs text-cobalt" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="mt-9 flex flex-wrap items-center gap-x-7 gap-y-3 text-[12px] font-semibold text-slate-600">
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald" aria-hidden="true"></i> Atendimento humanizado</span>
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald" aria-hidden="true"></i> Presencial e digital</span>
+            <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald" aria-hidden="true"></i> Suporte para sua empresa</span>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-[545px] lg:ml-auto">
+          <div class="pointer-events-none absolute -left-6 -top-8 z-0 h-40 w-40 rounded-full bg-emerald-100/80 blur-3xl" aria-hidden="true"></div>
+          <div class="pointer-events-none absolute -bottom-7 -right-7 z-0 h-44 w-44 rounded-full bg-blue-100/90 blur-3xl" aria-hidden="true"></div>
+          <div class="hero-image-wrap relative z-10 overflow-visible rounded-[30px]">
+            <div class="relative h-[390px] overflow-hidden rounded-[28px] bg-slate-200 shadow-[0_30px_75px_rgba(15,23,42,.18)] sm:h-[500px]">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Equipe profissional reunida em um escritório moderno para discutir planejamento empresarial" class="h-full w-full object-cover object-center" fetchpriority="high" decoding="async">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-slate-900/10 to-transparent" aria-hidden="true"></div>
+              <div class="absolute bottom-7 left-7 right-7 text-white sm:bottom-9 sm:left-9">
+                <span class="mb-2 block text-[11px] font-bold uppercase tracking-[.19em] text-emerald-300">Contabilidade consultiva</span>
+                <p class="max-w-[280px] font-display text-2xl font-extrabold leading-tight sm:text-[28px]">Mais clareza para suas decisões.</p>
+              </div>
+            </div>
+            <div class="absolute -bottom-7 -left-3 z-20 flex max-w-[260px] items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3.5 shadow-[0_20px_48px_rgba(15,23,42,.15)] sm:-left-8 sm:px-5 sm:py-4">
+              <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-50 text-xl text-emerald-600"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+              <span><strong class="block font-display text-[13px] font-extrabold text-navy">Tranquilidade fiscal</strong><small class="mt-1 block text-[11px] leading-4 text-slate-500">Organização e apoio em cada etapa</small></span>
+            </div>
+            <div class="absolute -right-2 top-7 z-20 hidden items-center gap-2 rounded-full border border-white/70 bg-white/95 px-4 py-3 shadow-card sm:flex sm:-right-5">
+              <i class="fa-solid fa-arrow-trend-up text-emerald-600" aria-hidden="true"></i><span class="text-[12px] font-bold text-navy">Gestão para crescer</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex gap-4">
-        <i class="fa-solid fa-user-doctor mt-1 w-6 text-xl text-vital-500"></i>
-        <div><dt class="font-display text-lg font-bold">Equipe qualificada</dt><dd class="mt-1 text-slate-600">Profissionais especializados que trabalham de forma integrada.</dd></div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" aria-labelledby="servicos-title" class="bg-ice py-20 sm:py-28">
+      <div class="page-container">
+        <div class="mx-auto max-w-[740px] text-center">
+          <span class="section-kicker">Nossas soluções</span>
+          <h2 id="servicos-title" class="mt-4 font-display text-[32px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[42px]">Soluções contábeis para cada fase do seu negócio</h2>
+          <p class="mx-auto mt-5 max-w-2xl text-[15px] leading-8 text-slate-600 sm:text-[16px]">Do primeiro CNPJ à rotina de uma empresa em expansão, ajudamos você a manter tudo organizado e tomar decisões com confiança.</p>
+        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
+            <span class="icon-tile"><i class="fa-solid fa-building-circle-check" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Abertura e Legalização de Empresas</h3>
+            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Processo ágil e sem burocracia para tirar seu CNPJ do papel, com orientação na escolha do regime tributário adequado.</p>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20abertura%20e%20legaliza%C3%A7%C3%A3o%20de%20empresas." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
+            <span class="icon-tile"><i class="fa-solid fa-id-card-clip" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Gestão Completa para MEI</h3>
+            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Abertura, alterações, declaração anual DASN-SIMEI, emissão de notas fiscais e apoio na migração de MEI para ME.</p>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20gest%C3%A3o%20de%20MEI%20e%20migra%C3%A7%C3%A3o%20para%20ME." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
+            <span class="icon-tile"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Contabilidade para Pequenas e Médias Empresas</h3>
+            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Escrituração contábil, apuração de impostos e acompanhamento das obrigações no Simples Nacional e Lucro Presumido.</p>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20contabilidade%20para%20pequenas%20e%20m%C3%A9dias%20empresas." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
+            <span class="icon-tile"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Imposto de Renda Pessoa Física e Jurídica</h3>
+            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Declarações, apuração de ganho de capital e orientação para tratar pendências e situações de malha fina com segurança.</p>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Imposto%20de%20Renda%20pessoa%20f%C3%ADsica%20ou%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
+            <span class="icon-tile"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Departamento Pessoal e eSocial</h3>
+            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Folha de pagamento, admissões, rescisões, férias, obrigações trabalhistas e gestão de eSocial Doméstico.</p>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20departamento%20pessoal%20e%20eSocial." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+          <article class="card-lift flex h-full flex-col rounded-[24px] border border-slate-200/90 bg-white p-7 shadow-soft sm:p-8">
+            <span class="icon-tile"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-[18px] font-extrabold leading-snug text-navy">Regularização Fiscal e Certidões</h3>
+            <p class="mt-3 flex-1 text-[14px] leading-[1.85] text-slate-600">Orientação para parcelar débitos, emitir certidões e regularizar pendências perante a Receita Federal e outros órgãos.</p>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20regulariza%C3%A7%C3%A3o%20fiscal%20e%20certid%C3%B5es." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-fit items-center gap-2 text-[13px] font-bold text-royal hover:text-emerald-700">Quero saber mais <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a>
+          </article>
+        </div>
       </div>
-      <div class="flex gap-4">
-        <i class="fa-solid fa-location-dot mt-1 w-6 text-xl text-vital-500"></i>
-        <div><dt class="font-display text-lg font-bold">Fácil de chegar</dt><dd class="mt-1 text-slate-600">No centro do Méier, com acesso simples por transporte e a pé.</dd></div>
+    </section>
+
+    <!-- PARA QUEM ATENDEMOS -->
+    <section id="publico" aria-labelledby="publico-title" class="bg-white py-20 sm:py-24">
+      <div class="page-container grid items-start gap-9 lg:grid-cols-[.85fr_1.15fr] lg:gap-16">
+        <div class="lg:sticky lg:top-32">
+          <span class="section-kicker">Para quem atendemos</span>
+          <h2 id="publico-title" class="mt-4 max-w-lg font-display text-[32px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[40px]">Seu negócio é único. A contabilidade também deve ser.</h2>
+          <p class="mt-5 max-w-lg text-[15px] leading-8 text-slate-600">Acompanhamento contábil pensado para a realidade de quem empreende, presta serviços e precisa de mais tempo para cuidar do próprio negócio.</p>
+          <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20as%20necessidades%20cont%C3%A1beis%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-royal transition hover:text-emerald-700">Converse sobre sua empresa <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-store" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">MEI e Microempresas</h3><p class="mt-2 text-sm leading-7 text-slate-600">Apoio para começar, organizar as obrigações e evoluir com segurança.</p></div>
+          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">Profissionais Liberais</h3><p class="mt-2 text-sm leading-7 text-slate-600">Orientação sobre tributos, formalização e organização financeira.</p></div>
+          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-shop" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">Comércio e Serviços</h3><p class="mt-2 text-sm leading-7 text-slate-600">Rotinas contábeis e fiscais alinhadas às necessidades da operação.</p></div>
+          <div class="rounded-[22px] border border-slate-100 bg-ice p-6 sm:p-7"><span class="grid h-12 w-12 place-items-center rounded-xl bg-white text-xl text-royal shadow-sm"><i class="fa-solid fa-building" aria-hidden="true"></i></span><h3 class="mt-5 font-display text-lg font-extrabold text-navy">Pequenas e Médias Empresas</h3><p class="mt-2 text-sm leading-7 text-slate-600">Suporte para manter a conformidade e enxergar oportunidades de melhoria.</p></div>
+        </div>
       </div>
-      <div class="flex gap-4">
-        <i class="fa-solid fa-hand-holding-heart mt-1 w-6 text-xl text-vital-500"></i>
-        <div><dt class="font-display text-lg font-bold">Atendimento personalizado</dt><dd class="mt-1 text-slate-600">Cada paciente recebe um plano próprio, para qualquer idade.</dd></div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" aria-labelledby="diferenciais-title" class="relative isolate overflow-hidden bg-navy py-20 text-white sm:py-28">
+      <div class="pointer-events-none absolute -right-48 -top-48 h-[500px] w-[500px] rounded-full bg-cobalt/15 blur-[95px]" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -bottom-48 -left-36 h-[450px] w-[450px] rounded-full bg-emerald/10 blur-[95px]" aria-hidden="true"></div>
+      <div class="page-container relative z-10">
+        <div class="grid gap-8 lg:grid-cols-[.95fr_1.05fr] lg:items-end lg:gap-14">
+          <div>
+            <span class="inline-flex items-center gap-2 text-[12px] font-extrabold uppercase tracking-[.15em] text-emerald-300"><span class="h-[2px] w-6 bg-emerald-400"></span> Por que nos escolher</span>
+            <h2 id="diferenciais-title" class="mt-5 max-w-xl font-display text-[32px] font-extrabold leading-[1.23] tracking-[-.04em] sm:text-[42px]">Mais do que números. <span class="text-emerald-300">Uma parceria de confiança.</span></h2>
+          </div>
+          <p class="max-w-xl text-[15px] leading-8 text-slate-300 sm:text-[16px]">Aqui, a contabilidade não precisa ser distante ou complicada. Você conta com orientação clara, contato próximo e atenção às necessidades reais do seu negócio — na Freguesia, em Jacarepaguá e além.</p>
+        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="rounded-[24px] border border-white/10 bg-white/[.065] p-7 backdrop-blur-sm sm:p-8">
+            <span class="grid h-13 w-13 h-[54px] place-items-center rounded-2xl bg-emerald/15 text-[23px] text-emerald-300"><i class="fa-regular fa-comments" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-lg font-bold text-white">Atendimento humanizado</h3>
+            <p class="mt-3 text-[14px] leading-7 text-slate-300">Conversa direta com o contador, sem robôs e com explicações que fazem sentido para você.</p>
+          </article>
+          <article class="rounded-[24px] border border-white/10 bg-white/[.065] p-7 backdrop-blur-sm sm:p-8">
+            <span class="grid h-[54px] w-[54px] place-items-center rounded-2xl bg-emerald/15 text-[23px] text-emerald-300"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-lg font-bold text-white">Agilidade e organização</h3>
+            <p class="mt-3 text-[14px] leading-7 text-slate-300">Acompanhamento da rotina fiscal, atenção aos prazos e entrega organizada de guias.</p>
+          </article>
+          <article class="rounded-[24px] border border-white/10 bg-white/[.065] p-7 backdrop-blur-sm sm:p-8">
+            <span class="grid h-[54px] w-[54px] place-items-center rounded-2xl bg-emerald/15 text-[23px] text-emerald-300"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></span>
+            <h3 class="mt-6 font-display text-lg font-bold text-white">Suporte próximo e digital</h3>
+            <p class="mt-3 text-[14px] leading-7 text-slate-300">Presença na região da Freguesia com a praticidade de um atendimento 100% digital.</p>
+          </article>
+        </div>
       </div>
-    </dl>
-  </div>
-</section>
+    </section>
 
-<!-- Avaliações -->
-<section id="avaliacoes" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
-  <div class="grid gap-6 lg:grid-cols-4">
-    <div class="rounded-3xl bg-vital-50 p-8 ring-1 ring-vital-100 lg:row-span-1">
-      <p class="font-display text-6xl font-extrabold text-vital-700">4,9</p>
-      <p class="mt-2 text-2xl text-amber-500" aria-label="5 estrelas">★★★★★</p>
-      <p class="mt-3 font-semibold">Nota no Google</p>
-      <p class="text-slate-600">Mais de 135 avaliações reais de pacientes.</p>
-    </div>
-    <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <p class="text-amber-500" aria-label="5 estrelas">★★★★★</p>
-      <blockquote class="mt-3 leading-relaxed text-slate-700">“Desde a recepção já dá para sentir o acolhimento. Minha filha ficou à vontade logo na primeira sessão e a evolução foi visível.”</blockquote>
-      <figcaption class="mt-4 text-sm font-semibold">Mariana S.<span class="font-normal text-slate-500"> · mãe de paciente</span></figcaption>
-    </figure>
-    <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <p class="text-amber-500" aria-label="5 estrelas">★★★★★</p>
-      <blockquote class="mt-3 leading-relaxed text-slate-700">“Profissionais atenciosos e muito claros nas orientações. Fiz a avaliação neuropsicológica e saí entendendo cada resultado.”</blockquote>
-      <figcaption class="mt-4 text-sm font-semibold">Rafael C.<span class="font-normal text-slate-500"> · paciente adulto</span></figcaption>
-    </figure>
-    <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-      <p class="text-amber-500" aria-label="5 estrelas">★★★★★</p>
-      <blockquote class="mt-3 leading-relaxed text-slate-700">“Atendimento pontual, ambiente limpo e equipe gentil. Os horários flexíveis ajudaram muito a encaixar o tratamento na minha rotina.”</blockquote>
-      <figcaption class="mt-4 text-sm font-semibold">Camila R.<span class="font-normal text-slate-500"> · paciente de nutrição</span></figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- Localização -->
-<section id="localizacao" class="bg-white">
-  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:py-24 lg:grid-cols-2">
-    <div>
-      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Venha nos visitar no Méier</h2>
-      <ul class="mt-8 space-y-6">
-        <li class="flex gap-4"><i class="fa-solid fa-location-dot mt-1 w-6 text-xl text-vital-500"></i>
-          <div><p class="font-semibold">Endereço</p><p class="text-slate-600">Rua Hemengarda, 60 - Salas 401 e 402<br>Méier, Rio de Janeiro - RJ</p></div></li>
-        <li class="flex gap-4"><i class="fa-regular fa-clock mt-1 w-6 text-xl text-vital-500"></i>
-          <div><p class="font-semibold">Horário de funcionamento</p><p class="text-slate-600">Segunda a Sexta, das 8h às 20h<br>Sábado, das 8h às 13h</p></div></li>
-        <li class="flex gap-4"><i class="fa-brands fa-whatsapp mt-1 w-6 text-xl text-vital-500"></i>
-          <div><p class="font-semibold">WhatsApp</p><p class="text-slate-600">+55 21 99755-9903</p></div></li>
-        <li class="flex gap-4"><i class="fa-brands fa-instagram mt-1 w-6 text-xl text-vital-500"></i>
-          <div><p class="font-semibold">Instagram</p><a href="https://instagram.com/clinicavitalmeier" target="_blank" rel="noopener" class="text-slate-600 underline decoration-vital-500 underline-offset-4 hover:text-vital-700">@clinicavitalmeier</a></div></li>
-      </ul>
-      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-        <a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 rounded-full bg-vital-700 px-7 py-4 font-semibold text-white transition hover:bg-vital-500"><i class="fa-brands fa-whatsapp text-xl"></i> Chamar no WhatsApp</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Hemengarda+60+M%C3%A9ier+Rio+de+Janeiro+RJ" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 rounded-full border border-slate-300 px-7 py-4 font-semibold transition hover:border-vital-500 hover:text-vital-700"><i class="fa-solid fa-map-location-dot"></i> Abrir no Google Maps</a>
+    <!-- PROCESSO -->
+    <section id="como-funciona" aria-labelledby="passos-title" class="bg-white py-20 sm:py-28">
+      <div class="page-container">
+        <div class="mx-auto max-w-[700px] text-center">
+          <span class="section-kicker">Simples assim</span>
+          <h2 id="passos-title" class="mt-4 font-display text-[32px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[42px]">Abrir sua empresa ou trocar de contador é mais fácil do que parece.</h2>
+          <p class="mt-5 text-[15px] leading-8 text-slate-600">Em três passos, você entende o caminho e recebe orientação do início ao fim.</p>
+        </div>
+        <ol class="relative mt-14 grid gap-8 md:grid-cols-3 md:gap-10">
+          <li class="relative text-center">
+            <div class="mx-auto grid h-[76px] w-[76px] place-items-center rounded-[23px] bg-blue-50 text-2xl text-cobalt"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+            <span class="mx-auto mt-5 grid h-8 w-8 place-items-center rounded-full bg-navy font-display text-xs font-bold text-white">01</span>
+            <h3 class="mt-5 font-display text-lg font-extrabold text-navy">Contato pelo WhatsApp</h3>
+            <p class="mx-auto mt-3 max-w-[295px] text-[14px] leading-7 text-slate-600">Conte o que precisa e tire suas primeiras dúvidas de forma prática.</p>
+          </li>
+          <li class="relative text-center">
+            <div class="mx-auto grid h-[76px] w-[76px] place-items-center rounded-[23px] bg-blue-50 text-2xl text-cobalt"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            <span class="mx-auto mt-5 grid h-8 w-8 place-items-center rounded-full bg-navy font-display text-xs font-bold text-white">02</span>
+            <h3 class="mt-5 font-display text-lg font-extrabold text-navy">Análise inicial gratuita</h3>
+            <p class="mx-auto mt-3 max-w-[295px] text-[14px] leading-7 text-slate-600">Entendemos seu cenário e apresentamos os próximos passos e a proposta de atendimento.</p>
+          </li>
+          <li class="relative text-center">
+            <div class="mx-auto grid h-[76px] w-[76px] place-items-center rounded-[23px] bg-blue-50 text-2xl text-cobalt"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+            <span class="mx-auto mt-5 grid h-8 w-8 place-items-center rounded-full bg-navy font-display text-xs font-bold text-white">03</span>
+            <h3 class="mt-5 font-display text-lg font-extrabold text-navy">Tudo encaminhado com clareza</h3>
+            <p class="mx-auto mt-3 max-w-[295px] text-[14px] leading-7 text-slate-600">Cuidamos dos trâmites contratados e acompanhamos a regularização do seu negócio.</p>
+          </li>
+        </ol>
+        <div class="mt-12 text-center">
+          <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20abrir%20minha%20empresa%20ou%20trocar%20de%20contador.%20Como%20podemos%20come%C3%A7ar%3F" target="_blank" rel="noopener noreferrer" class="focus-ring inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-navy px-7 py-4 text-[14px] font-bold text-white transition hover:bg-royal"><i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i> Começar agora</a>
+        </div>
       </div>
-    </div>
-    <div class="min-h-[320px] overflow-hidden rounded-3xl bg-slate-100 shadow-sm ring-1 ring-slate-200">
-      <iframe title="Mapa da Clínica Vital Méier" class="h-full min-h-[320px] w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Hemengarda+60+M%C3%A9ier+Rio+de+Janeiro+RJ&output=embed"></iframe>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-ink text-slate-300">
-  <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-10 md:flex-row md:items-center md:justify-between">
-    <div>
-      <p class="flex items-center gap-2 font-display text-lg font-extrabold text-white"><i class="fa-solid fa-leaf text-vital-500"></i> Clínica Vital Méier</p>
-      <p class="mt-2 text-sm">Rua Hemengarda, 60 - Salas 401 e 402, Méier, Rio de Janeiro - RJ</p>
-      <p class="text-sm">WhatsApp +55 21 99755-9903 · @clinicavitalmeier</p>
+    <!-- CONTATO -->
+    <section id="contato" aria-labelledby="contato-title" class="bg-ice py-20 sm:py-28">
+      <div class="page-container">
+        <div class="grid overflow-hidden rounded-[28px] bg-white shadow-[0_22px_80px_rgba(15,23,42,.08)] lg:grid-cols-[1.07fr_.93fr]">
+          <div class="p-7 sm:p-12 lg:p-14">
+            <span class="section-kicker">Vamos conversar?</span>
+            <h2 id="contato-title" class="mt-5 max-w-lg font-display text-[33px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[42px]">Sua empresa merece uma contabilidade que caminha ao seu lado.</h2>
+            <p class="mt-5 max-w-lg text-[15px] leading-8 text-slate-600">Precisa abrir um CNPJ, regularizar sua situação ou encontrar um suporte contábil mais próximo? Entre em contato para conversar sobre suas necessidades.</p>
+            <div class="mt-8 flex flex-col gap-6">
+              <div class="flex items-start gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><div><h3 class="text-[13px] font-extrabold text-navy">Localização e região de atendimento</h3><p class="mt-1 text-sm leading-7 text-slate-600">Freguesia, Jacarepaguá — Rio de Janeiro, RJ<br>Atendimento presencial e 100% digital</p></div></div>
+              <div class="flex items-start gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-blue-50 text-cobalt"><i class="fa-regular fa-clock" aria-hidden="true"></i></span><div><h3 class="text-[13px] font-extrabold text-navy">Horário de atendimento</h3><p class="mt-1 text-sm leading-7 text-slate-600">Segunda a sexta-feira, das 9h às 18h</p></div></div>
+              <div class="flex items-start gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700"><i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i></span><div><h3 class="text-[13px] font-extrabold text-navy">WhatsApp</h3><a class="mt-1 inline-block text-sm font-semibold text-royal hover:underline" href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Encontrei%20o%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer">+55 (21) 98856-2573</a></div></div>
+            </div>
+            <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Encontrei%20o%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="focus-ring mt-9 inline-flex min-h-[55px] w-full items-center justify-center gap-3 rounded-2xl bg-emerald-600 px-6 py-4 text-center text-[14px] font-extrabold text-white shadow-[0_12px_28px_rgba(5,150,105,.18)] transition hover:bg-emerald-700 sm:w-auto"><i class="fa-brands fa-whatsapp text-[22px]" aria-hidden="true"></i> Falar no WhatsApp</a>
+          </div>
+          <div class="relative flex min-h-[340px] flex-col justify-between overflow-hidden bg-navy p-8 text-white sm:p-12 lg:min-h-full lg:p-14">
+            <div class="pointer-events-none absolute inset-0 opacity-20" style="background-image: radial-gradient(#93c5fd 1px, transparent 1px); background-size: 24px 24px; mask-image:linear-gradient(to right,transparent,#000);" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute -right-32 -top-40 h-[420px] w-[420px] rounded-full border-[80px] border-cobalt/20" aria-hidden="true"></div>
+            <div class="relative z-10">
+              <div class="mb-12 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[12px] font-semibold text-emerald-200"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Estamos em Jacarepaguá</div>
+              <h3 class="max-w-sm font-display text-[30px] font-extrabold leading-tight tracking-[-.04em] sm:text-[36px]">Freguesia, RJ.<br><span class="text-emerald-300">Perto de você.</span></h3>
+              <p class="mt-5 max-w-sm text-sm leading-7 text-slate-300">Atendimento na região com a conveniência dos canais digitais para clientes de todo o Rio de Janeiro.</p>
+            </div>
+            <div class="relative z-10 mt-12 flex flex-wrap gap-3">
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Freguesia%2C%20Jacarepagua%2C%20Rio%20de%20Janeiro%20RJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-white/25 bg-white/10 px-4 py-3 text-[13px] font-bold text-white transition hover:bg-white/20"><i class="fa-solid fa-map-location-dot text-emerald-300" aria-hidden="true"></i> Ver região no mapa <i class="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i></a>
+              <span class="self-center text-[11px] leading-5 text-slate-400">Mapa ilustrativo da região, não do endereço do escritório.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="perguntas" aria-labelledby="faq-title" class="bg-white py-20 sm:py-24">
+      <div class="page-container grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:gap-16">
+        <div><span class="section-kicker">Dúvidas frequentes</span><h2 id="faq-title" class="mt-4 max-w-md font-display text-[31px] font-extrabold leading-[1.2] tracking-[-.04em] text-navy sm:text-[39px]">Respostas claras para começar com tranquilidade.</h2><p class="mt-5 max-w-md text-[15px] leading-8 text-slate-600">Não encontrou sua dúvida? Fale diretamente pelo WhatsApp.</p></div>
+        <div class="faq space-y-3">
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">Posso trocar de contador com a empresa em funcionamento?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Sim. A troca pode ser planejada sem interromper as atividades da empresa. Avaliamos sua situação e orientamos a transição da documentação e das obrigações.</p></details>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">Vocês atendem MEI e ajudam na mudança para ME?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Sim. O atendimento inclui orientação sobre obrigações do MEI, declaração anual, emissão de notas e análise dos procedimentos para migrar para microempresa.</p></details>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">É possível contratar o atendimento totalmente online?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Sim. Além do atendimento presencial na região da Freguesia, você pode tratar das suas demandas contábeis pelos canais digitais.</p></details>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-5 sm:p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-[14px] font-bold text-navy sm:text-[15px] [&::-webkit-details-marker]:hidden">Como funciona a análise inicial?<span class="faq-plus grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-ice text-cobalt"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></summary><p class="mt-4 pr-10 text-[14px] leading-7 text-slate-600">Você nos conta sua necessidade pelo WhatsApp. Fazemos uma análise inicial gratuita do cenário apresentado e explicamos as opções de atendimento, etapas e valores dos serviços que forem necessários.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="bg-white pb-20 sm:pb-28" aria-labelledby="cta-title">
+      <div class="page-container">
+        <div class="relative overflow-hidden rounded-[28px] bg-gradient-to-r from-royal to-navy px-7 py-11 text-center sm:px-12 sm:py-14">
+          <div class="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full border-[55px] border-white/5" aria-hidden="true"></div>
+          <h2 id="cta-title" class="relative mx-auto max-w-2xl font-display text-[27px] font-extrabold leading-tight tracking-tight text-white sm:text-[36px]">Cuide do seu negócio. A gente ajuda a cuidar da contabilidade.</h2>
+          <p class="relative mx-auto mt-4 max-w-xl text-[14px] leading-7 text-blue-100">Converse sobre seus desafios e descubra como podemos ajudar.</p>
+          <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20como%20a%20Francimar%20Lima%20pode%20ajudar%20na%20contabilidade%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer" class="focus-ring relative mt-7 inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-emerald-500 px-7 py-4 text-[14px] font-extrabold text-navy transition hover:bg-emerald-300"><i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Conversar com o contador</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="border-t border-slate-800 bg-navy py-14 text-slate-300">
+    <div class="page-container grid gap-10 md:grid-cols-3 lg:grid-cols-[1.3fr_1fr_1fr]">
+      <div>
+        <a href="#inicio" class="inline-flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-xl bg-white font-display text-lg font-extrabold tracking-[-.1em] text-navy">FL<span class="text-emerald-500">.</span></span><span><strong class="block font-display text-[17px] font-extrabold text-white">Francimar Lima</strong><small class="block text-[10px] font-medium uppercase tracking-[.1em] text-slate-400">Contabilidade &amp; Gestão Empresarial</small></span></a>
+        <p class="mt-6 max-w-sm text-[13px] leading-7 text-slate-400">Contabilidade descomplicada, atendimento próximo e soluções para a organização e o crescimento do seu negócio.</p>
+      </div>
+      <div><h3 class="font-display text-[14px] font-bold text-white">Serviços</h3><ul class="mt-5 space-y-3 text-[13px] text-slate-400"><li><a class="hover:text-white" href="#servicos">Abertura de empresas e MEI</a></li><li><a class="hover:text-white" href="#servicos">Contabilidade empresarial</a></li><li><a class="hover:text-white" href="#servicos">Imposto de Renda</a></li><li><a class="hover:text-white" href="#servicos">Departamento pessoal e eSocial</a></li><li><a class="hover:text-white" href="#servicos">Regularização fiscal</a></li></ul></div>
+      <div><h3 class="font-display text-[14px] font-bold text-white">Contato</h3><ul class="mt-5 space-y-4 text-[13px] text-slate-400"><li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-emerald-400" aria-hidden="true"></i> Freguesia, Jacarepaguá<br>Rio de Janeiro — RJ</li><li class="flex items-center gap-3"><i class="fa-regular fa-clock text-emerald-400" aria-hidden="true"></i> Seg. a sex. · 9h às 18h</li><li class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-emerald-400" aria-hidden="true"></i><a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Encontrei%20o%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="hover:text-white">(21) 98856-2573</a></li></ul></div>
     </div>
-    <p class="text-sm text-slate-400">© <span id="ano">2026</span> Clínica Vital Méier. Todos os direitos reservados.</p>
-  </div>
-</footer>
+    <div class="page-container mt-12 flex flex-col justify-between gap-4 border-t border-white/10 pt-7 text-[12px] text-slate-500 sm:flex-row sm:items-center">
+      <p>© <span id="current-year">2026</span> Francimar Lima — Contabilidade e Gestão. Todos os direitos reservados.</p>
+      <p>Freguesia · Jacarepaguá · Rio de Janeiro</p>
+    </div>
+  </footer>
 
-<!-- Botão flutuante -->
-<a href="https://wa.me/5521997559903?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" class="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-3xl text-white shadow-xl shadow-black/20 transition hover:scale-105">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+  <!-- WHATSAPP FIXO -->
+  <a href="https://wa.me/5521988562573?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Francimar%20Lima%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Francimar Lima pelo WhatsApp" title="Fale conosco pelo WhatsApp" class="float-whatsapp focus-ring fixed bottom-5 right-5 z-[60] grid h-[62px] w-[62px] place-items-center rounded-full border-[3px] border-white bg-[#16A34A] text-[31px] text-white transition hover:-translate-y-1 hover:bg-[#15803D] sm:bottom-7 sm:right-7"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
 
-<script>
-  document.getElementById('ano').textContent = new Date().getFullYear();
-  const btn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
-  btn.addEventListener('click', () => {
-    const open = menu.classList.toggle('hidden') === false;
-    btn.setAttribute('aria-expanded', open);
-  });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.add('hidden'); btn.setAttribute('aria-expanded', false); }));
-</script>
+  <script>
+    (function () {
+      'use strict';
+      var menuButton = document.getElementById('menu-button');
+      var mobileNavigation = document.getElementById('mobile-navigation');
+      var menuIcon = document.getElementById('menu-icon');
+      var yearElement = document.getElementById('current-year');
+      if (yearElement) yearElement.textContent = new Date().getFullYear();
+      if (!menuButton || !mobileNavigation) return;
+
+      function setMenu(open) {
+        mobileNavigation.classList.toggle('hidden', !open);
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+        menuIcon.classList.toggle('fa-bars', !open);
+        menuIcon.classList.toggle('fa-xmark', open);
+      }
+      menuButton.addEventListener('click', function () {
+        setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
+      });
+      mobileNavigation.querySelectorAll('a').forEach(function (anchor) {
+        anchor.addEventListener('click', function () { setMenu(false); });
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          menuButton.focus();
+        }
+      });
+      document.addEventListener('click', function (event) {
+        if (menuButton.getAttribute('aria-expanded') === 'true' && !menuButton.contains(event.target) && !mobileNavigation.contains(event.target)) setMenu(false);
+      });
+      window.addEventListener('resize', function () {
+        if (window.innerWidth >= 1024) setMenu(false);
+      });
+    }());
+  </script>
 </body>
 </html>
